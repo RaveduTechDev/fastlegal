@@ -1,0 +1,25 @@
+{
+  "public/assets/img/bg-header.jpg": {
+    "file": "assets/bg-header-BN2dsjws.jpg",
+    "src": "public/assets/img/bg-header.jpg"
+  },
+  "public/assets/img/bg-header2.jpg": {
+    "file": "assets/bg-header2-BgbW0K8R.jpg",
+    "src": "public/assets/img/bg-header2.jpg"
+  },
+  "public/assets/img/bg-header3.jpg": {
+    "file": "assets/bg-header3-NoO-q5W7.jpg",
+    "src": "public/assets/img/bg-header3.jpg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-BBQEVV6r.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-IbnlEw2D.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  }
+}

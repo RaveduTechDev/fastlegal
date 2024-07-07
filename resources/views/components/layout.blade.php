@@ -11,7 +11,8 @@
 
     <link rel="stylesheet" href="{{ asset('lib/owlcarousel/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/owlcarousel/css/owl.theme.default.min.css') }}">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" href="{{ asset('build/assets/app-BBQEVV6r.css') }}">
+    <script src="{{ asset('build/assets/app-IbnlEw2D.js') }}"></script>
 
 </head>
 
