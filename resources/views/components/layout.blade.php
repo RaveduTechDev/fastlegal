@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('lib/owlcarousel/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/owlcarousel/css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('build/assets/app-BBQEVV6r.css') }}">
-    <script src="{{ asset('build/assets/app-IbnlEw2D.js') }}"></script>
+    <script src="{{ asset('lib/owlcarousel/js/owl.carousel.min.js') }}"></script>
 
 </head>
 

@@ -5,7 +5,7 @@
         </a>
 
         <div class="flex items-center mt-2 lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
-            <button type="button"
+            {{-- <button type="button"
                 class="hidden lg:inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100  dark:hover:text-white">
                 <img src="{{ asset('assets/lang/id.svg') }}" class="h-4 mr-1 border border-gray-900" alt="INDONESIA">
                 ID
@@ -17,7 +17,7 @@
                 EN
             </button>
 
-            <div class="lg:border-r-2 lg:border-gray-200">&nbsp;</div>
+            <div class="lg:border-r-2 lg:border-gray-200">&nbsp;</div> --}}
 
             <ul class="font-semibold hidden lg:inline-flex text-sm ">
                 <li>
@@ -214,7 +214,7 @@
                     </a>
                 </li>
 
-                <div class="grid grid-cols-2 gap-4 mt-4">
+                {{-- <div class="grid grid-cols-2 gap-4 mt-4">
                     <button type="button"
                         class="inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100  dark:hover:text-white">
                         <img src="{{ asset('assets/lang/id.svg') }}" class="h-4 mr-1 border border-gray-900"
@@ -227,7 +227,7 @@
                         <img src="{{ asset('assets/lang/uk.svg') }}" class="h-4 mr-1" alt="ENGLAND">
                         EN
                     </button>
-                </div>
+                </div> --}}
 
             </ul>
         </aside>
