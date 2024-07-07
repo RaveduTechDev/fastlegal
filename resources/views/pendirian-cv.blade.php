@@ -1,0 +1,622 @@
+@extends('components.layout')
+
+@section('content')
+    <header>
+        <section class="relative bg-hero2 bg-fixed flex s-center pt-[120px] pb-[40px]">
+            <div class="overlay absolute inset-0"></div>
+            <div class="relative grid grid-cols-1 max-w-screen-xl mx-auto p-6 text-white">
+                <div class="text-center justify-center">
+                    <h1 class="text-2xl md:text-4xl font-bold mb-8 font-jakartaEuy">
+                        PAKET PENDIRIAN CV
+                    </h1>
+                    <p class="text-base md:text-lg mb-8 md:w-2/3 mx-auto">
+                        Deskripsi
+                    </p>
+                    <a href="#show-paket"
+                        class="bg-white hover:text-danger-500 text-danger-300 transition font-bold py-2 px-6 rounded-full w-max">
+                        Mulai Sekarang
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="max-w-screen-xl px-6 mx-auto mt-5">
+            <nav class="flex px-5 py-3 text-gray-700 border border-gray-200 rounded-lg bg-gray-50" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                    <li class="inline-flex items-center">
+                        <a href="{{ url('/') }}"
+                            class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-danger-300">
+                            <svg class="w-3 h-3 md:me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                            </svg>
+                            <span class="hidden md:block">Beranda</span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="rtl:rotate-180 block w-3 h-3 mx-1 text-gray-400 " aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 9 4-4-4-4" />
+                            </svg>
+                            <a href="{{ url('/pendirian-perusahaan') }}"
+                                class="ms-1 text-xs md:text-sm font-medium text-gray-700 hover:text-danger-300 md:ms-2">
+                                Pendirian Perusahaan
+                            </a>
+                        </div>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <svg class="rtl:rotate-180  w-3 h-3 mx-1 text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="ms-1 text-xs md:text-sm font-medium text-gray-500 md:ms-2 dark">
+                                Pendirian CV
+                            </span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </section>
+
+        <section id="show-paket" class="text-gray-700 body-font overflow-hidden max-w-screen-xl mx-auto">
+            <div class="px-5 py-24 flex flex-wrap">
+                <div class="lg:w-1/4 mt-48 hidden lg:block">
+                    <div
+                        class="mt-px border-t border-gray-300 border-b border-l rounded-tl-lg rounded-bl-lg overflow-hidden">
+                        <p
+                            class="bg-gray-100 text-gray-900 h-12 md:text-center px-4 flex items-center justify-start -mt-px">
+                            Pengecakan Nama Perusahaan
+                        </p>
+                        <p class="text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            Konsultasi Pendirian Perusahaan
+                        </p>
+                        <p class="bg-gray-100 text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            Akta Notaris
+                        </p>
+                        <p class=" text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            SK KEMENKUMHAM
+                        </p>
+                        <p class="bg-gray-100 text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            NPWP dan SKT
+                        </p>
+                        <p class="text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            Akun OSS RBA
+                        </p>
+                        <p class="bg-gray-100 text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            NIB dan Sertifikat Standar
+                        </p>
+                        <p class="text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            Pernyataan Tata Ruang, K3L dan SPPL
+                        </p>
+                        <p class="bg-gray-100 text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            Rekening Perusahaan
+                        </p>
+                        <p class="text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            EFIN Perusahaan
+                        </p>
+                        <p class="bg-gray-100 text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            TAX Planning
+                        </p>
+                        <p class="text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            SKT Umum Pajak
+                        </p>
+                        <p class="bg-gray-100 text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            Logo Perusahaan
+                        </p>
+                        <p class="text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            KOP Surat Perusahaan
+                        </p>
+                        <p class="bg-gray-100 text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            Stempel
+                        </p>
+                        <p class="text-gray-900 h-12 md:text-center px-4 flex items-center justify-start">
+                            Company Profile
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex lg:w-3/4 w-full flex-wrap lg:border border-gray-300 rounded-lg">
+                    <div
+                        class="lg:w-1/3 lg:mt-px w-full mb-10 lg:mb-0 border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+                        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+                            <h2 class="text-3xl text-gray-900 font-medium leading-none mb-4 mt-2">CV SILVER</h2>
+                            <span class="text-xl text-gray-600">IDR 4.700.000</span>
+                        </div>
+                        <p
+                            class="bg-gray-100 text-gray-600 h-12 md:text-center md:px-2 flex items-center -mt-px md:justify-center border-t border-gray-300">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Pengecakan Nama Perusahaan</span>
+                        </p>
+                        <p class=" text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Konsultasi Pendirian Perusahaan</span>
+                        </p>
+                        <p
+                            class="h-12 bg-gray-100 text-gray-600 lg:px-6 md:text-center leading-relaxed flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Akta Notaris</span>
+                        </p>
+                        <p class=" text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> SK KEMENKUMHAM</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> NPWP dan SKT</span>
+                        </p>
+                        <p class=" text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Akun OSS RBA</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> NIB dan Sertifikat Standar</span>
+
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Pernyataan Tata Ruang, K3L dan SPPL</span>
+
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> Rekening Perusahaan</span>
+                        </p>
+                        <p class=" text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> EFIN Perusahaan</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> TAX Planning</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> SKT Umum Pajak</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> Logo Perusahaan</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> KOP Surat Perusahaan</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> Stempel</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> Company Profile</span>
+                        </p>
+
+                        <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
+                            <a href=""
+                                class="flex items-center mt-auto text-white bg-danger-300 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-600 rounded">
+                                Pesan Sekarang
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:w-1/3 lg:-mt-px w-full mb-10 lg:mb-0 border-2 rounded-lg border-danger-300 relative">
+                        <span
+                            class="bg-danger-300 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+                            POPULER
+                        </span>
+                        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+                            <h2 class="text-3xl text-gray-900 font-medium leading-none mb-4 mt-2">CV GOLD</h2>
+                            <span class="text-xl text-gray-600">IDR 5.700.000</span>
+                        </div>
+                        <p
+                            class="bg-gray-100 text-gray-600 h-12 text-center lg:px-2 flex items-center -mt-px md:justify-center border-t border-gray-300">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Pengecakan Nama Perusahaan</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Konsultasi Pendirian Perusahaan</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Akta Notaris</span>
+                        </p>
+                        <p
+                            class="h-12 text-gray-600 lg:px-6 md:text-center leading-relaxed flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> SK KEMENKUMHAM</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> NPWP dan SKT</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Akun OSS RBA</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> NIB dan Sertifikat Standar</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Pernyataan Tata Ruang, K3L dan SPPL</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Rekening Perusahaan</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> EFIN Perusahaan</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> TAX Planning</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> SKT Umum Pajak</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> Logo Perusahaan</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> KOP Surat Perusahaan</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> Stempel</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6" />
+                            </svg>
+                            <span class="lg:hidden"> Company Profile</span>
+                        </p>
+
+                        <div class="p-6 text-center border-t border-gray-300">
+                            <a href=""
+                                class="flex items-center mt-auto text-white bg-danger-300 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-600 rounded">
+                                Pesan Sekarang
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div
+                        class="lg:w-1/3 w-full lg:mt-px border-2 border-gray-300 lg:border-none rounded-lg lg:rounded-none">
+                        <div class="px-2 text-center h-48 flex flex-col items-center justify-center">
+                            <h2 class="text-3xl text-gray-900 font-medium leading-none mb-4 mt-2">CV PLATINUM</h2>
+                            <span class="text-xl text-gray-600">IDR 6.500.000</span>
+                        </div>
+                        <p
+                            class="bg-gray-100 text-gray-600 h-12 text-center lg:px-2 flex items-center -mt-px md:justify-center border-t border-gray-300">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Pengecakan Nama Perusahaan</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Konsultasi Pendirian Perusahaan</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Akta Notaris</span>
+                        </p>
+                        <p
+                            class="h-12 text-gray-600 lg:px-6 md:text-center leading-relaxed flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> SK KEMENKUMHAM</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> NPWP dan SKT</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Akun OSS RBA</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> NIB dan Sertifikat Standar</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Pernyataan Tata Ruang, K3L dan SPPL</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Rekening Perusahaan</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> EFIN Perusahaan</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> TAX Planning</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> SKT Umum Pajak</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Logo Perusahaan</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> KOP Surat Perusahaan</span>
+                        </p>
+                        <p class="bg-gray-100 text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Stempel</span>
+                        </p>
+                        <p class="text-gray-600 md:text-center h-12 flex items-center md:justify-center">
+                            <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>
+                            <span class="lg:hidden"> Company Profile</span>
+                        </p>
+
+                        <div class="p-6 text-center border-t border-gray-300">
+                            <a href=""
+                                class="flex items-center mt-auto text-white bg-danger-300 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-600 rounded">
+                                Pesan Sekarang
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-auto" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <article class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-xl mx-auto p-6">
+                <div class="flex items-start justify-center">
+                    <img class="rounded-lg w-96" src="{{ asset('assets/img/about-us.svg') }}" alt="About Us">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-3xl font-bold mb-4 font-jakartaEuy">Apa itu CV ?</h2>
+                    <p class="mb-4">
+                        Persekutuan komanditer merupakan salah satu bentuk badan usaha bukan badan hukum yang dibentuk oleh
+                        dua orang atau lebih yang kemudian mempercayakan modal yang dimiliki kepada dua orang atau lebih. CV
+                        dilaksanakan berdasarkan Rancangan Undang-Undang (RUU) Usaha Perseorangan dan Badan Usaha Bukan
+                        Badan Hukum Pasal 1 ayat 5.
+
+                        <span class="">
+                            <p class="mb-4">
+                                Terdapat dua pemilik modal dalam badan usaha berbentuk persekutuan komanditer, yaitu sekutu
+                                komanditer dan sekutu komplementer. Sekutu komanditer bertugas menyerahkan barang, jasa,
+                                atau uang
+                                sebagai modal CV, tetapi tidak turut bertanggung jawab terhadap keberlangsungan CV.
+                            </p>
+                            <p class="mb-4">
+                                Sekutu ini juga disebut sebagai sekutu pasif karena hanya bertugas untuk menyerahkan
+                                pemasukan
+                                sebagai modal persekutuan. Sementara sekutu komplementer yang disebut sekutu aktif yang
+                                bertugas
+                                untuk aktivitas operasional perusahaan dan sepenuhnya berhak melangsungkan perjanjian kerja
+                                dengan
+                                pihak ketiga. Sekutu ini merupakan pihak yang bertanggung jawab penuh terhadap eksistensi
+                                CV,
+                                seperti yang tertulis di Kitab Undang-Undang Hukum Dagang (KUH) Pasal 19.
+                            </p>
+                        </span>
+                    </p>
+
+                </div>
+            </article>
+        </section>
+
+        @include('components.hubungi-component')
+    </main>
+@endsection
