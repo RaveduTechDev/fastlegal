@@ -19,8 +19,8 @@
             <div class="grid grid-cols-1 mx-auto md:grid-cols-2 gap-10 lg:mx-[10rem]">
                 <button data-modal-target="wa-popup" data-modal-toggle="wa-popup"
                     class="flex flex-row items-start max-w-full p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
-                    <svg class="w-12 h-12 text-danger" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
-                        height="24" fill="none" viewBox="0 0 24 24">
+                    <svg class="w-12 h-12 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path fill="currentColor" fill-rule="evenodd"
                             d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
                             clip-rule="evenodd" />
@@ -49,7 +49,7 @@
                                 <button type="button"
                                     class="end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
                                     data-modal-hide="wa-popup">
-                                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    <svg class="w-3 h-3 color" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 14">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                             stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
@@ -74,9 +74,8 @@
                                 <p class="mb-2">Atau</p>
                                 <a href=""
                                     class="flex flex-row items-center p-2 text-white rounded-md bg-danger-300 hover:bg-danger-700">
-                                    <svg class="w-6 h-6 text-danger-300" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
-                                        viewBox="0 0 24 24">
+                                    <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                        width="24" height="24" fill="none" viewBox="0 0 24 24">
                                         <path fill="currentColor" fill-rule="evenodd"
                                             d="M12 4a8 8 0 0 0-6.895 12.06l.569.718-.697 2.359 2.32-.648.379.243A8 8 0 1 0 12 4ZM2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10a9.96 9.96 0 0 1-5.016-1.347l-4.948 1.382 1.426-4.829-.006-.007-.033-.055A9.958 9.958 0 0 1 2 12Z"
                                             clip-rule="evenodd" />
@@ -100,8 +99,8 @@
                         <h2 class="mb-1 text-3xl font danger-3ight text-danger-300">
                             Email
                         </h2>
-                        <p>admin@fastlegal.biz</p>
-                        <p>marketing@fastlegal.biz</p>
+                        <p>admin@fastlegal.id</p>
+                        <p>marketing@fastlegal.id</p>
                     </div>
                 </button>
 
