@@ -32,7 +32,7 @@
                     <div class="px-2 text-center h-28 flex flex-col items-center justify-center">
                         <span class="text-2xl text-gray-600">IDR 7.900.000</span>
                     </div>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center border-t border-gray-300">
+                    <p class="text-gray-600 h-12 whitespace-nowrap px-6 flex items-center border-t border-gray-300">
                         <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -40,7 +40,7 @@
                         </svg>
                         <span> AKTA Pendirian Perkumpulan</span>
                     </p>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center">
+                    <p class="text-gray-600 h-12 whitespace-nowrap px-6 flex items-center">
                         <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -48,7 +48,7 @@
                         </svg>
                         <span> SK KEMENKUMHAM</span>
                     </p>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center">
+                    <p class="text-gray-600 h-12 whitespace-nowrap px-6 flex items-center">
                         <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -56,7 +56,7 @@
                         </svg>
                         <span> NPWP dan SKT</span>
                     </p>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center">
+                    <p class="text-gray-600 h-12 whitespace-nowrap px-6 flex items-center">
                         <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -64,7 +64,7 @@
                         </svg>
                         <span> NIB</span>
                     </p>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center">
+                    <p class="text-gray-600 h-12 whitespace-nowrap px-6 flex items-center">
                         <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

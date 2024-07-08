@@ -27,19 +27,20 @@
                     </p>
                 </div>
 
-                <div class="w-full mt-px bg-white shadow-danger-300 rounded-lg md:ml-20">
+                <div class="w-full mt-px bg-white shadow-danger-300 rounded-lg md:ml-10 lg:ml-20">
                     <div class="px-2 text-center h-28 flex flex-col items-center justify-center">
                         <span class="text-2xl text-gray-600">IDR 6.900.000</span>
                     </div>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center border-t border-gray-300">
-                        <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <p class="text-gray-600 h-12 px-6 flex items-center border-t border-gray-300">
+                        <svg class="sm:w-10 sm:h-10 md:w-8 md:h-8 lg:w-6 lg:h-6 text-green-500" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                            viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M5 11.917 9.724 16.5 19 7.5" />
                         </svg>
                         <span> AKTA Pendirian Persekutuan Perdata</span>
                     </p>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center">
+                    <p class="text-gray-600 h-12 whitespace-nowrap px-6 flex items-center">
                         <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -47,7 +48,7 @@
                         </svg>
                         <span> NPWP dan SKT</span>
                     </p>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center">
+                    <p class="text-gray-600 h-12 whitespace-nowrap px-6 flex items-center">
                         <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -55,7 +56,7 @@
                         </svg>
                         <span> NIB Persekutuan Data</span>
                     </p>
-                    <p class="text-gray-600 h-12 lg:px-2 flex items-center">
+                    <p class="text-gray-600 h-12 whitespace-nowrap px-6 flex items-center">
                         <svg class="w-6 h-6 text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"

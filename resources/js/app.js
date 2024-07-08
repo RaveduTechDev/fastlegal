@@ -79,7 +79,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         const numTarget = document.querySelector(".countAbout");
-        numObserver.observe(numTarget);
+        numObserver.observe(numTarget);  
+    } else if (location.pathname === "/partner-client") {
+        document.getElementById("show-more").addEventListener("click", function () {
+            const hiddenImages = document.querySelectorAll(".gallery-item.hidden");
+            hiddenImages.forEach((image) => {
+                image.classList.remove("hidden");
+            });
+            this.style.display = "none";
+        });
     }
 
     function animateNumCount(id, targetValue) {
@@ -335,11 +343,4 @@ $(document).ready(function () {
 });
 
 lightGallery(document.querySelector("#gallery-content"));
-// Menampilkan gambar tersembunyi
-document.getElementById("show-more").addEventListener("click", function () {
-    const hiddenImages = document.querySelectorAll(".gallery-item.hidden");
-    hiddenImages.forEach((image) => {
-        image.classList.remove("hidden");
-    });
-    this.style.display = "none";
-});
+
