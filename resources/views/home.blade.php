@@ -746,7 +746,7 @@
                         </div>
                     </a>
                     <a href="{{ asset('assets/img/dokumentasi/IMG-20231221-WA0054.jpg') }}"
-                        class="gallery-item overflow-hidden relative w-full h-100 hidden ">
+                        class="gallery-item overflow-hidden relative w-full h-100 hidden group">
                         <img src="{{ asset('assets/img/dokumentasi/IMG-20231221-WA0054.jpg') }}"
                             class="gallery-img w-full h-full object-cover" alt="Image 11" />
                         <div
