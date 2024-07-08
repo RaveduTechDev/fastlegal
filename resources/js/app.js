@@ -88,6 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             this.style.display = "none";
         });
+
     } else if (location.pathname === "/partner-client") {
         document.getElementById("show-more").addEventListener("click", function () {
             const hiddenImages = document.querySelectorAll(".gallery-item.hidden");

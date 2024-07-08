@@ -14,7 +14,7 @@
                         kami, Anda dapat fokus mengembangkan bisnis tanpa khawatir tentang proses perizinan. Mulailah
                         perjalanan sukses Anda bersama kami.
                     </p>
-                    <a href="#"
+                    <a href="#start"
                         class="bg-white hover:text-danger-500 text-danger-300 transition font-bold py-2 px-6 rounded-full w-max">
                         Mulai Sekarang
                     </a>
@@ -42,7 +42,8 @@
                 </div>
 
                 <div class="item px-2">
-                    <a href="#" class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
+                    <a href="{{ url('/fasthalal') }}"
+                        class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
                         <svg class="w-8 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
                             <path
@@ -55,7 +56,8 @@
                 </div>
 
                 <div class="item px-2">
-                    <a href="#" class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
+                    <a href="{{ url('/fastkontruksi') }}"
+                        class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
                         <svg class=" w-9 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512">
                             <path
@@ -69,7 +71,8 @@
                 </div>
 
                 <div class="item px-2">
-                    <a href="#" class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
+                    <a href="{{ url('/fastproperti') }}"
+                        class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
                         <svg class="w-10 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 512">
                             <path
@@ -83,7 +86,8 @@
                 </div>
 
                 <div class="item px-2">
-                    <a href="#" class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
+                    <a href="{{ url('/fasttax') }}"
+                        class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
                         <svg class="w-6 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 384 512">
                             <path
@@ -97,7 +101,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="start">
             <article class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-screen-xl mx-auto p-6">
                 <div class="flex items-center justify-center">
                     <img class="rounded-lg w-96" src="{{ asset('assets/img/about-us.svg') }}" alt="About Us">
@@ -249,7 +253,8 @@
                             Fasthalal membantu Anda memperoleh sertifikasi halal yang sah dan terpercaya untuk berbagai
                             jenis produk dan layanan.
                         </p>
-                        <a class="text-danger-300 text-bold hover:underline" href="">Selengkapnya</a>
+                        <a class="text-danger-300 text-bold hover:underline"
+                            href="{{ url('/fasthalal') }}">Selengkapnya</a>
                     </div>
                 </div>
 
@@ -262,7 +267,8 @@
                             Fastkontruksi memudahkan izin usaha konstruksi untuk tender dengan syarat mudah, proses
                             cepat, dan biaya terjangkau. Izin resmi dari LSBU yang terdaftar di Kementerian PUPR.
                         </p>
-                        <a class="text-danger-300 text-bold hover:underline" href="">Selengkapnya</a>
+                        <a class="text-danger-300 text-bold hover:underline"
+                            href="{{ url('/fastkontruksi') }}">Selengkapnya</a>
                     </div>
                 </div>
 
@@ -274,7 +280,8 @@
                             Fastproperti membantu anda dalam pengurusan surat-surat seputar tanah dan properti. Dengan
                             dibantu oleh tenaga professional dan berdedikasi kami sangat bangga melayani anda.
                         </p>
-                        <a class="text-danger-300 text-bold hover:underline" href="">Selengkapnya</a>
+                        <a class="text-danger-300 text-bold hover:underline"
+                            href="{{ url('/fastproperti') }}">Selengkapnya</a>
                     </div>
                 </div>
 
@@ -286,7 +293,8 @@
                             Fastfax membantu mengoptimalkan efisiensi pajak dan mematuhi semua peraturan melalui
                             strategi inovatif, mendukung strategi keseluruhan perusahaan Anda.
                         </p>
-                        <a class="text-danger-300 text-bold hover:underline" href="">Selengkapnya</a>
+                        <a class="text-danger-300 text-bold hover:underline"
+                            href="{{ url('/fasttax') }}">Selengkapnya</a>
                     </div>
                 </div>
 
@@ -297,7 +305,8 @@
                         <p class="text-gray-700">
                             Layanan lainnya yang sering dibutuhkan untuk kebutuhan bisnis
                         </p>
-                        <a class="text-danger-300 text-bold hover:underline" href="">Selengkapnya</a>
+                        <a class="text-danger-300 text-bold hover:underline"
+                            href="{{ url('/layanan-lainnya') }}">Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -320,8 +329,7 @@
             </header>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="col-span-1 mb-8 md:mb-0">
-                    <a href="https://www.kominfo.go.id/content/detail/44405/permudah-perizinan-usaha-pelaku-umkm-ekraf-kemenparekraf-gandeng-izincoid/0/berita"
-                        target="_blank" class="text-black">
+                    <a href="#" target="_blank" class="text-black">
                         <div class="card shadow-lg rounded-lg overflow-hidden">
                             <img class="w-full h-48 object-cover" src="{{ asset('assets/img/bg-header.jpg') }}"
                                 alt="">
@@ -343,8 +351,7 @@
                     </a>
                 </div>
                 <div class="col-span-1 mb-8 md:mb-0">
-                    <a href="https://kemenparekraf.go.id/hasil-pencarian/siaran-pers-kemenparekraf-gandeng-izincoid-kolaborasi-permudah-perizinan-usaha-pelaku-umkm-ekraf"
-                        target="_blank" class="text-black">
+                    <a href="" target="_blank" class="text-black">
                         <div class="card shadow-lg rounded-lg overflow-hidden">
                             <img class="w-full h-48 object-cover" src="{{ asset('assets/img/bg-header.jpg') }}"
                                 alt="">
@@ -367,43 +374,38 @@
                 </div>
                 <div class="col-span-1 mb-8 md:mb-0">
                     <div>
-                        <a href="https://izin.co.id/indonesia-business-tips/2022/08/03/kenali-hak-desain-industri-atas-produk-anda/"
-                            target="_blank" class="text-black">
+                        <a href="" target="_blank" class="text-black">
                             <h6 class="font-jakartaEuy text-lg font-bold mb-1">Kenali Hak Desain Industri Atas
                                 Produk Anda!</h6>
                             <p class="text-gray-500 text-sm mb-4">28 Juli, 2021</p>
                         </a>
                         <div class="border-b-2 border-red-500 mb-4"></div>
-                        <a href="https://izin.co.id/indonesia-business-tips/2022/08/11/here-are-the-reasons-why-you-should-use-virtual-office-in-indonesia/"
-                            target="_blank" class="text-black">
+                        <a href="" target="_blank" class="text-black">
                             <h6 class="font-jakartaEuy text-lg font-bold mb-1">Inilah alasan mengapa Anda harus
                                 menggunakan Virtual
                                 Office di Indonesia!</h6>
                             <p class="text-gray-500 text-sm mb-4">28 Juli, 2021</p>
                         </a>
                         <div class="border-b-2 border-red-500 mb-4"></div>
-                        <a href="https://izin.co.id/indonesia-business-tips/2022/07/28/merek-dagang-mu-belum-terdaftar-berikut-ini-kasus-sengketa-merek-yang-terkenal-di-indonesia/"
-                            target="_blank" class="text-black">
+                        <a href="" target="_blank" class="text-black">
                             <h6 class="font-jakartaEuy text-lg font-bold mb-1">Merek Dagang Mu Belum Terdaftar?
                                 Berikut Ini Kasus
                                 Sengketa Merek Yang Terkenal Di Indonesia</h6>
                             <p class="text-gray-500 text-sm mb-4">28 Juli, 2021</p>
                         </a>
                         <div class="border-b-2 border-red-500 mb-4"></div>
-                        <a href="https://izin.co.id/indonesia-business-tips/2022/07/28/hak-kekayaan-intelektual-bisa-jadi-jaminan/"
-                            target="_blank" class="text-black">
+                        <a href="" target="_blank" class="text-black">
                             <h6 class="font-jakartaEuy text-lg font-bold mb-1">Hak Kekayaan Intelektual Bisa Jadi
                                 Jaminan!</h6>
                             <p class="text-gray-500 text-sm mb-4">28 Juli, 2021</p>
                         </a>
                         <div class="border-b-2 border-danger-300 mb-4"></div>
-                        <a href="https://izin.co.id/indonesia-business-tips/2022/07/13/perhatikan-hal-hal-berikut-dalam-penutupan-pt/"
-                            target="_blank" class="text-black">
+                        <a href="" target="_blank" class="text-black">
                             <h6 class="font-jakartaEuy text-lg font-bold mb-1">Perhatikan Hal-Hal Berikut Dalam
                                 Penutupan PT!</h6>
                             <p class="text-gray-500 text-sm mb-4">13 Juli, 2022</p>
                         </a>
-                        <a href="https://izin.co.id/indonesia-business-tips/" class="text-danger-300 font-bold">Lihat
+                        <a href="" class="text-danger-300 font-bold">Lihat
                             Artikel Lain <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>

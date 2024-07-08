@@ -30,7 +30,7 @@
     <script src="{{ asset('lib/jquery.min.js') }}"></script>
     <script src="{{ asset('lib/owlcarousel/js/owl.carousel.min.js') }}"></script>
     <script src="{{ url('https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js') }}"></script>
-    <script src="{{ asset('build/assets/app-1COdtq9U.js') }}"></script>
+    <script src="{{ asset('build/assets/app-Mt8Je599.js') }}"></script>
 
 </body>
 
