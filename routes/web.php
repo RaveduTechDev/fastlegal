@@ -66,6 +66,10 @@ Route::get('/layanan-lainnya', function () {
     return view('layanan-lainnya', ['title' => 'Fastlegal Indonesia - Layanan Lainnya']);
 });
 
+Route::get('/partner-client', function () {
+    return view('client', ['title' => 'Fastlegal Indonesia - Partner Client Kami']);
+});
+
 Route::get('/hubungi-kami', function () {
     return view('kontak', ['title' => 'Fastlegal Indonesia - Hubungi Kami']);
 });

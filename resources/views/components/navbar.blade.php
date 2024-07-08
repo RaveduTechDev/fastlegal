@@ -104,8 +104,14 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ url('/partner-client') }}"
+                        class="block py-2 px-2 lg:p-0 {{ request()->is('partner-client') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 dark:text-white lg:dark:hover:text-blue-500  dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                        PARTNER & CLIENT
+                    </a>
+                </li>
+                <li>
                     <a href="{{ url('/artikel') }}"
-                        class="block py-2 px-2 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 dark:text-white lg:dark:hover:text-blue-500  dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                        class="block py-2 px-2 lg:p-0 {{ request()->is('artikel') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 dark:text-white lg:dark:hover:text-blue-500  dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
                         ARTIKEL
                     </a>
                 </li>
@@ -198,6 +204,14 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ url('/partner-client') }}"
+                        class="block py-2 px-3  
+                        {{ request()->is('partner-client') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
+                        aria-current="page">
+                        PARTNER & CLIENT
+                    </a>
+                </li>
+                <li>
                     <a href="{{ url('/artikel') }}"
                         class="block py-2 px-3  
                         {{ request()->is('artikel') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
@@ -283,7 +297,7 @@
             <li>
                 <a href="{{ url('/fastkontruksi') }}"
                     class="flex items-start p-3 rounded-lg hover:bg-white hover:shadow-custom ">
-                    <svg class="mx-2 w-24 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="mr-1 w-16 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 576 512">
                         <path
                             d="M256 32c-17.7 0-32 14.3-32 32v2.3 99.6c0 5.6-4.5 10.1-10.1 10.1c-3.6 0-7-1.9-8.8-5.1L157.1 87C83 123.5 32 199.8 32 288v64H544l0-66.4c-.9-87.2-51.7-162.4-125.1-198.6l-48 83.9c-1.8 3.2-5.2 5.1-8.8 5.1c-5.6 0-10.1-4.5-10.1-10.1V66.3 64c0-17.7-14.3-32-32-32H256zM16.6 384C7.4 384 0 391.4 0 400.6c0 4.7 2 9.2 5.8 11.9C27.5 428.4 111.8 480 288 480s260.5-51.6 282.2-67.5c3.8-2.8 5.8-7.2 5.8-11.9c0-9.2-7.4-16.6-16.6-16.6H16.6z" />
@@ -301,7 +315,7 @@
                 <a href="{{ url('/fastproperti') }}"
                     class="flex items-start p-3 rounded-lg hover:bg-white hover:shadow-custom ">
 
-                    <svg class="w-24 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="w-16 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 640 512">
                         <path
                             d="M48 0C21.5 0 0 21.5 0 48V464c0 26.5 21.5 48 48 48h96V432c0-26.5 21.5-48 48-48s48 21.5 48 48v80h89.9c-6.3-10.2-9.9-22.2-9.9-35.1c0-46.9 25.8-87.8 64-109.2V271.8 48c0-26.5-21.5-48-48-48H48zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm112-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM80 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V112zM272 96h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16zM576 272a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM352 477.1c0 19.3 15.6 34.9 34.9 34.9H605.1c19.3 0 34.9-15.6 34.9-34.9c0-51.4-41.7-93.1-93.1-93.1H445.1c-51.4 0-93.1 41.7-93.1 93.1z" />
@@ -320,7 +334,7 @@
             <li>
                 <a href="{{ url('/fasttax') }}"
                     class="flex items-start p-3 rounded-lg hover:bg-white hover:shadow-custom ">
-                    <svg class="w-24 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="mx-1 w-12 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 384 512">
                         <path
                             d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 80c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H80c-8.8 0-16-7.2-16-16zm128 72c8.8 0 16 7.2 16 16v17.3c8.5 1.2 16.7 3.1 24.1 5.1c8.5 2.3 13.6 11 11.3 19.6s-11 13.6-19.6 11.3c-11.1-3-22-5.2-32.1-5.3c-8.4-.1-17.4 1.8-23.6 5.5c-5.7 3.4-8.1 7.3-8.1 12.8c0 3.7 1.3 6.5 7.3 10.1c6.9 4.1 16.6 7.1 29.2 10.9l.5 .1 0 0 0 0c11.3 3.4 25.3 7.6 36.3 14.6c12.1 7.6 22.4 19.7 22.7 38.2c.3 19.3-9.6 33.3-22.9 41.6c-7.7 4.8-16.4 7.6-25.1 9.1V440c0 8.8-7.2 16-16 16s-16-7.2-16-16V422.2c-11.2-2.1-21.7-5.7-30.9-8.9l0 0 0 0c-2.1-.7-4.2-1.4-6.2-2.1c-8.4-2.8-12.9-11.9-10.1-20.2s11.9-12.9 20.2-10.1c2.5 .8 4.8 1.6 7.1 2.4l0 0 0 0 0 0c13.6 4.6 24.6 8.4 36.3 8.7c9.1 .3 17.9-1.7 23.7-5.3c5.1-3.2 7.9-7.3 7.8-14c-.1-4.6-1.8-7.8-7.7-11.6c-6.8-4.3-16.5-7.4-29-11.2l-1.6-.5 0 0c-11-3.3-24.3-7.3-34.8-13.7c-12-7.2-22.6-18.9-22.7-37.3c-.1-19.4 10.8-32.8 23.8-40.5c7.5-4.4 15.8-7.2 24.1-8.7V232c0-8.8 7.2-16 16-16z" />
@@ -337,6 +351,12 @@
             <li>
                 <a href="{{ url('/layanan-lainnya') }}"
                     class="flex items-start p-3 rounded-lg hover:bg-white hover:shadow-custom ">
+                    <svg class="w-16 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                            d="M9 8h10M9 12h10M9 16h10M4.99 8H5m-.02 4h.01m0 4H5" />
+                    </svg>
+
                     <div class="ml-4">
                         <h3 class="font-semibold">Layanan Lainnya</h3>
                         <p class="text-sm text-gray-500 ">
@@ -349,21 +369,20 @@
         <ul>
             <li>
                 <a href="#" class="block p-3 rounded-lg hover:bg-white hover:shadow-custom ">
-                    <div class="font-semibold">Online Stores</div>
-                    <span class="text-sm text-gray-500 ">Connect with
-                        third-party tools that
-                        you're already using.</span>
+                    <div class="font-semibold">Lorem ipsum dolor</div>
+                    <span class="text-sm text-gray-500 ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sint!
+                    </span>
                 </a>
             </li>
             <li>
                 <a href="#" class="block p-3 rounded-lg hover:bg-white hover:shadow-custom ">
-                    <div class="font-semibold">Segmentation</div>
-                    <span class="text-sm text-gray-500 ">Connect with
-                        third-party tools that
-                        you're already using.</span>
+                    <div class="font-semibold">Tralala Trilili</div>
+                    <span class="text-sm text-gray-500 ">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatibus?
+                    </span>
                 </a>
             </li>
-
         </ul>
     </nav>
 </section>

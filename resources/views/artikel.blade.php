@@ -2,7 +2,7 @@
 
 @section('content')
     <header>
-        <section class="relative bg-hero3 bg-fixed flex s-center pt-[120px] pb-[40px]">
+        {{-- <section class="relative bg-hero3 bg-fixed flex s-center pt-[120px] pb-[40px]">
             <div class="overlay absolute inset-0"></div>
             <div class="relative grid grid-cols-1 md:grid-cols-2 max-w-screen-xl mx-auto p-6 text-white">
                 <div>
@@ -16,7 +16,8 @@
                     </p>
                 </div>
             </div>
-        </section>
+        </section> --}}
+        <h1 class="text-3xl text-center pt-[120px]">MOHON MAAF ARTIKEL BELUM TERSEDIA 😇</h1>
     </header>
 
     <main>
