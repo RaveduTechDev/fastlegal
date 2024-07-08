@@ -41,33 +41,10 @@
         </div>
 
         <div class="w-full h-full flex items-center border-2 rounded border-gray-400">
-            {{-- <iframe class="w-full h-full rounded"
+            <iframe class="w-full h-full rounded"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.718212279407!2d107.14481847732831!3d-6.300708927414482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b27a5cbb513%3A0xd134f97daf174010!2sRuko%20Metro%20Boulevard%2C%20Jl.%20Niaga%20Raya%2C%20Pasirsari%2C%20Cikarang%20Sel.%2C%20Kabupaten%20Bekasi%2C%20Jawa%20Barat%2017530!5e0!3m2!1sen!2sid!4v1720444689685!5m2!1sen!2sid"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
-            <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="820" height="560" id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=Jalan+Niaga+Raya+Ruko+Metro+Boulevard+No.+12+B+Jababeka+2+Desa+Pasirsari+Kecamatan+Cikarang+Selatan%2C+Bekasi+%E2%80%93+17530&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                        href="https://www.analarmclock.com"></a><br><a href="https://www.onclock.net"></a><br>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 560px;
-                            width: 820px;
-                        }
-                    </style><a href="https://www.ongooglemaps.com">google map net</a>
-                    <style>
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 560px;
-                            width: 820px;
-                        }
-                    </style>
-                </div>
-            </div>
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 </section>
