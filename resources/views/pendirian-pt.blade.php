@@ -502,7 +502,7 @@
                 <div class="flex items-start justify-center">
                     <img class="rounded-lg w-96" src="{{ asset('assets/img/about-us.svg') }}" alt="About Us">
                 </div>
-                <div class="flex flex-col justify-center">
+                <div>
                     <h2 class="text-3xl font-bold mb-4 font-jakartaEuy">Apa itu PT ?</h2>
                     <p class="mb-4">
                         Perseroan Terbatas (PT) (bahasa Belanda: Naamloze Vennootschap) adalah suatu badan hukum untuk
@@ -517,7 +517,7 @@
                         atau uang
                         sebagai modal CV, tetapi tidak turut bertanggung jawab terhadap keberlangsungan CV.
                     </p>
-                    <p class="mb-4">
+                    <p class="mb-6">
                         Sekutu ini juga disebut sebagai sekutu pasif karena hanya bertugas untuk menyerahkan
                         pemasukan
                         sebagai modal persekutuan. Sementara sekutu komplementer yang disebut sekutu aktif yang
@@ -528,7 +528,20 @@
                         CV,
                         seperti yang tertulis di Kitab Undang-Undang Hukum Dagang (KUH) Pasal 19.
                     </p>
+                    <p class="mb-2 text-bold">
+                        PERSYARATAN PENDIRIAN KLIK DIBAWAH INI
+                    </p>
 
+                    <a href=""
+                        class="px-4 py-2 inline-flex transition bg-danger-300 hover:bg-danger-700 rounded-md text-white">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M9 2.221V7H4.221a2 2 0 0 1 .365-.5L8.5 2.586A2 2 0 0 1 9 2.22ZM11 2v5a2 2 0 0 1-2 2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2 2 2 0 0 0 2 2h12a2 2 0 0 0 2-2 2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2V4a2 2 0 0 0-2-2h-7Zm-6 9a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0v-1h.5a2.5 2.5 0 0 0 0-5H5Zm1.5 3H6v-1h.5a.5.5 0 0 1 0 1Zm4.5-3a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h1.376A2.626 2.626 0 0 0 15 15.375v-1.75A2.626 2.626 0 0 0 12.375 11H11Zm1 5v-3h.375a.626.626 0 0 1 .625.626v1.748a.625.625 0 0 1-.626.626H12Zm5-5a1 1 0 0 0-1 1v5a1 1 0 1 0 2 0v-1h1a1 1 0 1 0 0-2h-1v-1h1a1 1 0 1 0 0-2h-2Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="ml-2"> Lihat Persyaratan</span>
+                    </a>
                 </div>
             </article>
         </section>
