@@ -35,8 +35,9 @@
                         <img class="w-10 block group-hover:hidden"
                             src="{{ asset('assets/img/commercial-complex-icon.svg') }}" alt="icon company">
                         <div class="ml-4">
-                            <h3 class="text-xs sm:text-sm md:text-base font-semibold group-hover:text-white">Pendirian
-                                Perusahaan</h3>
+                            <h3 class="text-xs sm:text-sm md:text-base font-semibold group-hover:text-white">
+                                Pendirian Perusahaan
+                            </h3>
                         </div>
                     </a>
                 </div>
@@ -158,8 +159,8 @@
                     <div class="ml-4">
                         <h5 class="text-xl font-semibold mb-2">Profesional</h5>
                         <p class="text-gray-600">
-                            Fast Legal memiliki tim profesional yang ahli di bidangnya masing-masing yang akan bantu Anda
-                            dapatkan sertifikasi melalui proses yang tepat.
+                            Fast Legal memiliki tim profesional yang ahli di bidangnya masing - masing yang akan membantu
+                            anda mendapatkan sertifikasi atau perizinan usaha yang legal melalui proses yang tepat.
                         </p>
                     </div>
                 </div>
@@ -213,13 +214,12 @@
                     <div class="ml-4">
                         <h5 class="text-xl font-semibold mb-2">Garansi Pasti Beres</h5>
                         <p class="text-gray-600">
-                            Selama owner tidak melanggar peraturan perizinan, maka kami garansi perizinan anda pasti beres,
-                            diterbitkan oleh DPMPTSP maupun Lembaga Pemerintah lainnya yang berwewenang menerbitkan
-                            perizinan.
+                            Selama Pelaku Usaha tidak melanggar peraturan perizinan, maka kami akan garansi perizinan anda
+                            pasti beres, diterbitkan oleh DPMPTSP atau BKPM maupun Lembaga dan Kementerian lainnya yang
+                            berwewenang menerbitkan perizinan
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -286,7 +286,8 @@
                 </div>
 
                 <div class="item bg-white shadow-xl border-2 border-gray-100 rounded-lg overflow-hidden">
-                    <img class="mx-auto p-4 imgfasttax" src="{{ asset('assets/img/fasttax.svg') }}" alt="FASTTAX">
+                    <img class="mx-auto py-1 px-4 imgfasttax" src="{{ asset('assets/icon/FAST TAX.png') }}"
+                        alt="FASTTAX">
                     <div class="p-4">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">FASTTAX</h3>
                         <p class="text-gray-700">
@@ -428,74 +429,166 @@
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/apji.png') }}" alt="apji logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
                         <img class="w-60 img-partner"
-                            src="{{ asset('assets/img/partner/Bank_Syariah_Indonesia.svg.png') }}" alt="bsi logo">
+                            src="{{ asset('assets/img/partner/halal-mui-logo-A88C9A098B-seeklogo.com.png') }}"
+                            alt="halal-mui logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/partner/Logo_BUMN_Untuk_Indonesia_2020.svg.png') }}"
+                            alt="BUMN_Untuk_Indonesia logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/APTRINDO.png') }}"
+                            alt="APTRINDO logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/atrbpn.png') }}"
+                            alt="atrbpn logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/partner/Bank_Syariah_Indonesia.svg.png') }}" alt="BSI logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/bca.png') }}" alt="BCA logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/bjb.png') }}" alt="bjb logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/bpjs-ketenagakerjaan.png') }}"
+                            alt="bpjs ketenagakerjaan logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/Equitrust Lab.jpeg') }}"
+                            alt="Equitrust Lab logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/gapeknas.png') }}"
+                            alt="gapeknas logo">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
                         <img class="w-60 img-partner"
                             src="{{ asset('assets/img/partner/gapensi-logo-A3000ECD57-seeklogo.com.png') }}"
-                            alt="gapensi">
+                            alt="gapensi logo">
                     </div>
                 </div>
+
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/halal-mui-logo.png') }}"
-                            alt="halal mui">
-                    </div>
-                </div>
-                <div class="item px-2">
-                    <div class="partner-logo">
-                        <img class="w-60 img-partner"
-                            src="{{ asset('assets/img/partner/Bank_Syariah_Indonesia.svg.png') }}" alt="bsi logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/HIPMI PT.jpg') }}"
+                            alt="hipmi logo">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
                         <img class="w-60 img-partner"
-                            src="{{ asset('assets/img/partner/gapensi-logo-A3000ECD57-seeklogo.com.png') }}"
-                            alt="gapensi">
-                    </div>
-                </div>
-                <div class="item px-2">
-                    <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/halal-mui-logo.png') }}"
-                            alt="halal mui">
-                    </div>
-                </div>
-                <div class="item px-2">
-                    <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/alfi_logo.png') }}"
-                            alt="alfi logo">
+                            src="{{ asset('assets/img/partner/hipmi-logo-BAE167B37C-seeklogo.com.png') }}"
+                            alt="hipmi logo">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
                         <img class="w-60 img-partner"
-                            src="{{ asset('assets/img/partner/gapensi-logo-A3000ECD57-seeklogo.com.png') }}"
-                            alt="gapensi">
+                            src="{{ asset('assets/img/partner/Lambang_Kementerian_Lingkungan_Hidup_dan_Kehutanan.png') }}"
+                            alt="Kementerian_Lingkungan_Hidup_dan_Kehutanan logo">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/halal-mui-logo.png') }}"
-                            alt="halal mui">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/Logo_djp.svg.png') }}"
+                            alt="djp logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/logo_ikra (1).png') }}"
+                            alt="ikra logo">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
                         <img class="w-60 img-partner"
-                            src="{{ asset('assets/img/partner/Bank_Syariah_Indonesia.svg.png') }}" alt="bsi logo">
+                            src="{{ asset('assets/img/partner/Logo_Kementerian_Investasi_-_BKPM_(2021).png') }}"
+                            alt="Kementerian Investasi BKPM">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
                         <img class="w-60 img-partner"
-                            src="{{ asset('assets/img/partner/gapensi-logo-A3000ECD57-seeklogo.com.png') }}"
-                            alt="gapensi">
+                            src="{{ asset('assets/img/partner/LOGO_KEMENTERIAN_PERHUBUNGAN_REPUBLIK_INDONESIA.png') }}"
+                            alt="KEMENTERIAN PERHUBUNGAN REPUBLIK INDONESIA">
                     </div>
                 </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/Logo_sucofindo.png') }}"
+                            alt="sucofindo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/mandiri.png') }}"
+                            alt="Mandiri logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/pengayoman-kemenkumham.jpeg') }}"
+                            alt="pengayoman kemenkumham logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/PngItem_627122.png') }}"
+                            alt="Kadin Logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/TDA.jpeg') }}" alt="TDA logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/partner/terkenal.co.id.png') }}"
+                            alt="terkenal.co.id logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/client/Elegant_Parisian_Style_Fame_Lifestyle_Blogger_Logo__1_-removebg-preview.PNG') }}"
+                            alt="Elegant Parisian Style Fame Lifestyle Blogger logo">
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -507,67 +600,262 @@
             <div class="owl-carousel owl-theme client-link">
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/Blue_Simple_Company_Logo.PNG') }}"
-                            alt="blue simple logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/ajwa.png') }}" alt="ajwa">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/hitachi.png') }}"
-                            alt="hitachi logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/ayoung.png') }}" alt="ayoung">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/htli.jpg') }}" alt="gapensi">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/client/Blue_Simple_Company_Logo-removebg-preview.PNG') }}"
+                            alt="Blue_Simple_Company">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/tel.png') }}" alt="halal mui">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/client/Elegant_Parisian_Style_Fame_Lifestyle_Blogger_Logo__1_-removebg-preview.PNG') }}"
+                            alt="Elegant_Parisian_Style_Fame_Lifestyle_Blogger">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo bg-dark px-2">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/ETERNAL-02.png') }}"
+                            alt="eternal">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/hitachi.png') }}"
-                            alt="hitachi logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/hsj g.png') }}" alt="hsj">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/htli.jpg') }}" alt="gapensi">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/images (1) (27).png') }}"
+                            alt="amazzone world">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/tel.png') }}" alt="halal mui">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/images (15).png') }}"
+                            alt="hitachi astemo">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/Blue_Simple_Company_Logo.PNG') }}"
-                            alt="blue simple logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240531-WA0033.jpg') }}"
+                            alt="Faber Castel">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/htli.jpg') }}" alt="gapensi">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20230128-WA0018.png') }}"
+                            alt="Garmenia Id">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/tel.png') }}" alt="halal mui">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20230720-WA0110.png') }}"
+                            alt="langgeng">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/hitachi.png') }}"
-                            alt="hitachi logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20230725-WA0060.jpg') }}"
+                            alt="bolu kukus gedung juang">
                     </div>
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/htli.jpg') }}" alt="gapensi">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20230826-WA0005.jpg') }}"
+                            alt="kita oleh indonesia">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20231003-WA0079.jpg') }}"
+                            alt="CMM">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240530-WA0015.jpg') }}"
+                            alt="Suila Properti Indonesia">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240530-WA0018.jpg') }}"
+                            alt="Gerakan Pemuda Bekasi">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240530-WA0034.jpg') }}"
+                            alt="MTI">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240530-WA0037.jpg') }}"
+                            alt="PT Analistika Maxima Gemilang">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240530-WA0055.png') }}"
+                            alt="Jawara nusantara">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240530-WA0056.png') }}"
+                            alt="AM Kingdom Transindo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240530-WA0060.png') }}"
+                            alt="Djaya Global Utama">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240531-WA0023.png') }}"
+                            alt="s">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG-20240531-WA0046.jpg') }}"
+                            alt="Apotek Arcade">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG_20240530_001308.png') }}"
+                            alt="HTLI">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG_20240530_003648.jpg') }}"
+                            alt="PT Arzaquna Karya Nusantara">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/IMG_20240530_210253.jpg') }}"
+                            alt="LPK Raftel Satya">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/indomobil.png') }}"
+                            alt="indomobil">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/Logo AHM.png') }}"
+                            alt="AHM">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/logo amex.png') }}"
+                            alt="Amex">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/LOGO BJR.png') }}"
+                            alt="BJR">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/LOGO CV.png') }}" alt="BJM">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/logo eskobar oke.png') }}"
+                            alt="eskobar">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/LOGO PCB.png') }}"
+                            alt="Pemenang Cahaya Barokah">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/LOGO PT BJM.png') }}"
+                            alt="BJM Express">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/LOGO TSC JPEG.jpg') }}"
+                            alt="TSC">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/logo-removebg-preview.png') }}"
+                            alt="PT TANAH EMAS LOGISTIK">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/logo_wet.png') }}"
+                            alt="WET WATER">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/Seafood Receh.png') }}"
+                            alt="Seafood Receh">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner" src="{{ asset('assets/img/client/ssi-logo-web.png') }}"
+                            alt="SSI Logo">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/client/WhatsApp Image 2024-07-07 at 13.53.06.jpeg') }}"
+                            alt="PT Adhi Djaya Utama">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/client/WhatsApp Image 2024-07-07 at 13.53.07.jpeg') }}"
+                            alt="APJ">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/client/WhatsApp Image 2024-07-07 at 13.53.51.jpeg') }}"
+                            alt="Andara">
+                    </div>
+                </div>
+                <div class="item px-2">
+                    <div class="partner-logo">
+                        <img class="w-60 img-partner"
+                            src="{{ asset('assets/img/client/WhatsApp Image 2024-07-07 at 13.55.34.jpeg') }}"
+                            alt="TKG">
                     </div>
                 </div>
             </div>

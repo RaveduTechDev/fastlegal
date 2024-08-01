@@ -56,8 +56,8 @@
         <section class="max-w-screen-xl mx-auto p-6 mt-4 mb-10 relative" id="start">
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
-                        alt="Pendirian Perusahaan">
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/pendirian-perusahaan/PENDIRIAN PT.png') }}" alt="Pendirian PT">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian PT</h3>
                         <p class="text-gray-700 text-md">
@@ -86,8 +86,8 @@
                 </div>
 
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
-                        alt="Pendirian Perusahaan">
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/pendirian-perusahaan/PENDIRIAN CV.png') }}" alt="Pendirian CV">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian CV</h3>
                         <p class="text-gray-700 text-md">
@@ -115,7 +115,8 @@
                 </div>
 
                 <div class="bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/pendirian-perusahaan/PENDIRIAN FIRMA.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian Firma</h3>
@@ -145,7 +146,8 @@
                 </div>
 
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/pendirian-perusahaan/PENDIRIAN KOPERASI.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian Koperasi</h3>
@@ -176,7 +178,8 @@
                 </div>
 
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/pendirian-perusahaan/PENDIRIAN YAYASAN.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian Yayasan</h3>
@@ -207,7 +210,8 @@
                 </div>
 
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/pendirian-perusahaan/PENDIRIAN PERKUMPULAN.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian Perkumpulan</h3>
@@ -238,7 +242,8 @@
                 </div>
 
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/pendirian-perusahaan/PENDIRIAN PERSEKUTUAN PERDATA.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian Persekutuan Perdata</h3>

@@ -26,7 +26,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/fast-kontruksi/Kartu Tanda Anggota (KTA) Asosiasi Kontruksi.PNG') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">Kartu Tanda Anggota (KTA) Asosiasi
@@ -48,7 +49,8 @@
                 </div>
 
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/fast-kontruksi/Sertifikat Kompetensi Kerja (SKK).PNG') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">Sertifikat Kompetensi Kerja (SKK)</h3>
@@ -69,7 +71,8 @@
                 </div>
 
                 <div class=" bg-white  border border-red-300/45 rounded-lg overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4"
+                        src="{{ asset('assets/icon/fast-kontruksi/Sertifikat Badan Usaha (SBU).PNG') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">Sertifikat Badan Usaha (SBU) </h3>

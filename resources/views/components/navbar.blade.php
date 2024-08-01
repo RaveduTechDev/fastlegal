@@ -184,7 +184,7 @@
                         <li>
                             <a href="{{ url('/fasttax') }}"
                                 class="flex items-center border-y border-white w-full hover:bg-gray-100 py-2 pl-10 text-gray-900 transition duration-75">
-                                FASTFAX
+                                FASTTAX
                             </a>
                         </li>
                         <li>

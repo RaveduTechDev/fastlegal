@@ -26,7 +26,7 @@
                 <table class="divide-y divide-gray-200 min-w-full">
                     <tbody class="bg-white divide-y divide-gray-200">
                         <tr class="border-y ">
-                            <td class="py-2">Sertifikasi Halal Kosmetik dan Minuman</td>
+                            <td class="py-2">Sertifikasi Halal Makanan dan Minuman</td>
                             <td class="py-2 whitespace-nowrap text-right">
                                 <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"

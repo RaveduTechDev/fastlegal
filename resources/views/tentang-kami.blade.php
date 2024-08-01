@@ -158,8 +158,8 @@
                     <div class="ml-4">
                         <h5 class="text-xl font-semibold mb-2">Profesional</h5>
                         <p class="text-gray-600">
-                            Fast Legal memiliki tim profesional yang ahli di bidangnya masing-masing yang akan bantu Anda
-                            dapatkan sertifikasi melalui proses yang tepat.
+                            Fast Legal memiliki tim profesional yang ahli di bidangnya masing - masing yang akan membantu
+                            anda mendapatkan sertifikasi atau perizinan usaha yang legal melalui proses yang tepat.
                         </p>
                     </div>
                 </div>
@@ -213,13 +213,12 @@
                     <div class="ml-4">
                         <h5 class="text-xl font-semibold mb-2">Garansi Pasti Beres</h5>
                         <p class="text-gray-600">
-                            Selama owner tidak melanggar peraturan perizinan, maka kami garansi perizinan anda pasti beres,
-                            diterbitkan oleh DPMPTSP maupun Lembaga Pemerintah lainnya yang berwewenang menerbitkan
-                            perizinan.
+                            Selama Pelaku Usaha tidak melanggar peraturan perizinan, maka kami akan garansi perizinan anda
+                            pasti beres, diterbitkan oleh DPMPTSP atau BKPM maupun Lembaga dan Kementerian lainnya yang
+                            berwewenang menerbitkan perizinan.
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
