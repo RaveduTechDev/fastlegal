@@ -1,10 +1,10 @@
 <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-40 top-0 start-0" id="navigation">
     <div class="max-w-screen-xl m-h-screen justify-between flex flex-wrap items-center mx-auto py-2 px-4">
         <a href="{{ url('/') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="{{ asset('assets/img/logo.jpeg') }}" class="h-16" alt="Logo FASTLEGAL" />
+            <img src="{{ asset('assets/img/F.png') }}" class="h-16" alt="Logo FASTLEGAL" />
         </a>
 
-        <div class="flex items-center mt-2 lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
+        <div class="flex items-center mt-1 lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
             {{-- <button type="button"
                 class="hidden lg:inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100  dark:hover:text-white">
                 <img src="{{ asset('assets/lang/id.svg') }}" class="h-4 mr-1 border border-gray-900" alt="INDONESIA">

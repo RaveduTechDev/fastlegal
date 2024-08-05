@@ -268,7 +268,7 @@
                         </p>
 
                         <div class="border-t border-gray-300 p-6 text-center rounded-bl-lg">
-                            <a href=""
+                            <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                 class="flex items-center mt-auto text-white bg-danger-300 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-600 rounded">
                                 Pesan Sekarang
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -427,7 +427,7 @@
                         </p>
 
                         <div class="p-6 text-center border-t border-gray-300">
-                            <a href=""
+                            <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                 class="flex items-center mt-auto text-white bg-danger-300 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-600 rounded">
                                 Pesan Sekarang
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -583,7 +583,7 @@
                         </p>
 
                         <div class="p-6 text-center border-t border-gray-300">
-                            <a href=""
+                            <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                 class="flex items-center mt-auto text-white bg-danger-300 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-600 rounded">
                                 Pesan Sekarang
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -634,6 +634,7 @@
                             </p>
 
                             <a href=""
+                                {{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}
                                 class="px-4 py-2 inline-flex transition bg-danger-300 hover:bg-danger-700 rounded-md text-white">
                                 <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                     width="24" height="24" fill="currentColor" viewBox="0 0 24 24">

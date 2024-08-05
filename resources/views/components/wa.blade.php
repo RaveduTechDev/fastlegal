@@ -1,5 +1,6 @@
 <div id="whatsapp-button" class="fixed bottom-5 right-5 md:right-8 z-50">
-    <a href="" target="_blank">
+    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+        target="_blank">
         <div
             class="relative inline-flex items-center justify-center p-3 rounded-full shadow-lg bg-green-500 hover:bg-green-600">
             <svg class="w-10 h-10 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"

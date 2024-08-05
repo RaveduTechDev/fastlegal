@@ -90,7 +90,7 @@
                     </p>
 
                     <div class="p-6 text-center border-t border-gray-300">
-                        <a href=""
+                        <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                             class="flex items-center mt-auto text-white bg-danger-300 border-0 py-2 px-4 w-full focus:outline-none hover:bg-red-600 rounded">
                             Pesan Sekarang
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"

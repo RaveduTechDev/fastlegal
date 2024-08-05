@@ -28,7 +28,7 @@
             <h3 class="text-xl md:text-2xl font-medium mb-5">Layanan FASTTAX</h3>
             <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 <div class=" bg-white  border border-danger-300 rounded-md overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/icon/FAST TAX.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">VAT</h3>
@@ -50,7 +50,8 @@
                         </p>
                     </div>
 
-                    <a href="" class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
+                    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                        class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
                         <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
                             height="24" fill="none" viewBox="0 0 24 24">
                             <path fill="currentColor" fill-rule="evenodd"
@@ -65,7 +66,7 @@
                 </div>
 
                 <div class=" bg-white  border border-danger-300 rounded-md overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/icon/FAST TAX.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">PAJAK INTERNASIONAL</h3>
@@ -103,7 +104,7 @@
                         </p>
                     </div>
 
-                    <a href=""
+                    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                         class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
                         <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -118,7 +119,7 @@
                 </div>
 
                 <div class=" bg-white  border border-danger-300 rounded-md overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/icon/FAST TAX.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">SENGKETA PAJAK</h3>
@@ -148,7 +149,7 @@
                         </p>
                     </div>
 
-                    <a href=""
+                    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                         class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
                         <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -163,7 +164,7 @@
                 </div>
 
                 <div class=" bg-white  border border-danger-300 rounded-md overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/icon/FAST TAX.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">TRANSFER PRICING (TP)</h3>
@@ -193,7 +194,7 @@
                         </p>
                     </div>
 
-                    <a href=""
+                    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                         class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
                         <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -208,7 +209,7 @@
                 </div>
 
                 <div class=" bg-white  border border-danger-300 rounded-md overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/icon/FAST TAX.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">INVESTASI dan LAYANAN PERUSAHAAN</h3>
@@ -246,7 +247,7 @@
                         </p>
                     </div>
 
-                    <a href=""
+                    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                         class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
                         <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -261,7 +262,7 @@
                 </div>
 
                 <div class=" bg-white  border border-danger-300 rounded-md overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/icon/FAST TAX.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">BEA CUKAI</h3>
@@ -307,7 +308,7 @@
                         </p>
                     </div>
 
-                    <a href=""
+                    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                         class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
                         <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -322,7 +323,7 @@
                 </div>
 
                 <div class=" bg-white  border border-danger-300 rounded-md overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/icon/FAST TAX.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">MERGER dan AKUISISI (M&A)</h3>
@@ -360,7 +361,7 @@
                         </p>
                     </div>
 
-                    <a href=""
+                    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                         class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
                         <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">
@@ -375,7 +376,7 @@
                 </div>
 
                 <div class=" bg-white  border border-danger-300 rounded-md overflow-hidden flex flex-col">
-                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/img/pendirian-pt.svg') }}"
+                    <img class="mx-auto w-[200px] p-4" src="{{ asset('assets/icon/FAST TAX.png') }}"
                         alt="Pendirian Perusahaan">
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg md:text-xl mb-4 font-bold font-jakartaEuy">APPLICATION OF THE PRUDENCE PRINCIPLE
@@ -399,7 +400,7 @@
                         </p>
                     </div>
 
-                    <a href=""
+                    <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                         class="bg-danger-300 hover:bg-danger-700 rounded-b p-4 text-white flex items-center">
                         <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             width="24" height="24" fill="none" viewBox="0 0 24 24">

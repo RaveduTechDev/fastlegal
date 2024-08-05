@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('lib/owlcarousel/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('lib/owlcarousel/css/owl.theme.default.min.css') }}">
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
-    <link rel="stylesheet" href="{{ asset('build/assets/app-B3-_X3JM.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-DPvBhz__.css') }}">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
 

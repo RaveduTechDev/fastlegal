@@ -27,7 +27,7 @@
                         <tr class="border-y ">
                             <td class="py-2">Pengurusan Balik Nama BPN</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@
                         <tr class="border-y">
                             <td class="py-2">Pengurusan Ahli Waris Tanah</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@
                         <tr class="border-y">
                             <td class="py-2">Pengurusan Akta Balik Nama</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@
                         <tr class="border-y">
                             <td class="py-2">Pengurusan Akta Jual – Beli </td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@
                         <tr class="border-y">
                             <td class="py-2">Peningkatan Hak Guna Bangunan</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@
                         <tr class="border-y">
                             <td class="py-2">Perpanjangan Hak Guna Bangunan</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@
                         <tr class="border-y">
                             <td class="py-2">Pengurusan Girik ke SHM</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +148,7 @@
                         <tr class="border-y">
                             <td class="py-2">Pemecahan Sertipikat</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="https://wa.me/6287877530812?text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20Pembuatan%20dan%20Peninjauan%20Perjanjian"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
