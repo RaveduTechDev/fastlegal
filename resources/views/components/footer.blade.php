@@ -2,7 +2,9 @@
     <section class="bg-gray-800 text-white p-8 max-w-screen-xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:gap-4">
             <div class="w-full mb-8">
-                <img src="{{ asset('assets/img/logo.jpeg') }}" alt="logo fastlegal" class="mb-4 w-40">
+                <a href="{{ url('/') }}">
+                    <img src="{{ asset('assets/img/F.png') }}" alt="logo fastlegal" class="mb-4 bg-white px-4 py-2 w-40">
+                </a>
 
                 <p class="flex items-center mb-2">
                     <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
