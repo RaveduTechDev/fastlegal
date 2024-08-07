@@ -117,10 +117,9 @@
                         seluruh kebutuhan legalitas Perusahaan.
                     </p>
 
-                    <section class="bg-white dark:bg-gray-900">
+                    <section class="bg-white">
                         <div class="max-w-screen-xl px-4 mx-auto text-center  lg:px-6">
-                            <dl
-                                class="countAbout grid max-w-screen-md gap-20 mx-auto text-gray-900 grid-cols-3 dark:text-white">
+                            <dl class="countAbout grid max-w-screen-md gap-20 mx-auto text-gray-900 grid-cols-3">
                                 <div class="flex flex-col items-center justify-center">
                                     <dt id="counter1" class="mb-2 text-2xl md:text-4xl font-extrabold">2</dt>
                                     <dd class="font-light text-gray-500">Tahun Pengalaman</dd>

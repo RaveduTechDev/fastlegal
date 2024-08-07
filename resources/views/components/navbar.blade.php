@@ -1,4 +1,4 @@
-<nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full z-40 top-0 start-0" id="navigation">
+<nav class="bg-white border-gray-200 fixed w-full z-40 top-0 start-0" id="navigation">
     <div class="max-w-screen-xl m-h-screen justify-between flex flex-wrap items-center mx-auto py-2 px-4">
         <a href="{{ url('/') }}" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('assets/img/F.png') }}" class="h-16" alt="Logo FASTLEGAL" />
@@ -6,13 +6,13 @@
 
         <div class="flex items-center mt-1 lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
             {{-- <button type="button"
-                class="hidden lg:inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100  dark:hover:text-white">
+                class="hidden lg:inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100 ">
                 <img src="{{ asset('assets/lang/id.svg') }}" class="h-4 mr-1 border border-gray-900" alt="INDONESIA">
                 ID
             </button>
 
             <button type="button"
-                class="hidden lg:inline-flex items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100  dark:hover:text-white">
+                class="hidden lg:inline-flex items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 ">
                 <img src="{{ asset('assets/lang/uk.svg') }}" class="h-4 mr-1" alt="ENGLAND">
                 EN
             </button>
@@ -38,7 +38,7 @@
             </ul> --}}
 
             <button type="button"
-                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400  dark:focus:ring-gray-600"
+                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
                 data-drawer-target="drawer-nav" data-drawer-show="drawer-nav" data-drawer-placement="right"
                 aria-controls="drawer-nav" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
@@ -53,7 +53,7 @@
         {{-- navbar --}}
         <div class="md:lg:pl-4 lg:mt-2 grow-0 lg:grow hidden w-full lg:flex lg:w-auto lg:order-1">
             <ul
-                class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-7 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700">
+                class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-7 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white lg:dark:bg-gray-900">
                 <li>
                     {{-- aria-current="page" --}}
                     <a href="{{ url('/') }}"
@@ -71,7 +71,7 @@
                         'pendirian-perkumpulan',
                         'pendirian-persekutuan-perdata',
                         'fasthalal',
-                        'fastkontruksi',
+                        'fastkonstruksi',
                         'fastproperti',
                         'fasttax',
                         'layanan-lainnya',
@@ -80,6 +80,15 @@
                     foreach ($layananRoutes as $layananRoute) {
                         if (request()->is($layananRoute)) {
                             $isLayananRoute = true;
+                            break;
+                        }
+                    }
+
+                    $ArtikelRoutes = ['artikel', 'artikel/*', 'comment/*', 'user/*'];
+                    $isArtikelRoute = false;
+                    foreach ($ArtikelRoutes as $ArtikelRoute) {
+                        if (request()->is($ArtikelRoute)) {
+                            $isArtikelRoute = true;
                             break;
                         }
                     }
@@ -99,19 +108,19 @@
                 </li>
                 <li>
                     <a href="{{ url('/tentang-kami') }}"
-                        class="block py-2 px-2 lg:p-0 {{ request()->is('tentang-kami') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 dark:text-white lg:dark:hover:text-blue-500  dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                        class="block py-2 px-2 lg:p-0 {{ request()->is('tentang-kami') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 lg:dark:hover:text-blue-500  lg:dark:hover:bg-transparent">
                         TENTANG KAMI
                     </a>
                 </li>
                 <li>
                     <a href="{{ url('/partner-client') }}"
-                        class="block py-2 px-2 lg:p-0 {{ request()->is('partner-client') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 dark:text-white lg:dark:hover:text-blue-500  dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                        class="block py-2 px-2 lg:p-0 {{ request()->is('partner-client') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 lg:dark:hover:text-blue-500  lg:dark:hover:bg-transparent">
                         PARTNER & CLIENT
                     </a>
                 </li>
                 <li>
                     <a href="{{ url('/artikel') }}"
-                        class="block py-2 px-2 lg:p-0 {{ request()->is('artikel') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 dark:text-white lg:dark:hover:text-blue-500  dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">
+                        class="block py-2 px-2 lg:p-0 {{ $isArtikelRoute ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 lg:dark:hover:text-blue-500  lg:dark:hover:bg-transparent">
                         ARTIKEL
                     </a>
                 </li>
@@ -120,11 +129,11 @@
 
         {{-- sidebar di drawer --}}
         <aside id="drawer-nav"
-            class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto lg:hidden transition-transform duration-500 translate-x-full bg-white w-80 dark:bg-gray-800"
+            class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto lg:hidden transition-transform duration-500 translate-x-full bg-white w-80"
             tabindex="-1" aria-labelledby="drawer-right-label">
 
             <button type="button" data-drawer-hide="drawer-nav" aria-controls="drawer-nav"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-10 h-10 absolute top-3.5 end-3.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white">
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-10 h-10 absolute top-3.5 end-3.5 inline-flex items-center justify-center">
                 <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 14 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -170,9 +179,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ url('/fastkontruksi') }}"
+                            <a href="{{ url('/fastkonstruksi') }}"
                                 class="flex items-center border-y border-white w-full hover:bg-gray-100 py-2 pl-10 text-gray-900 transition duration-75">
-                                FASTKONTRUKSI
+                                FASTKONSTRUKSI
                             </a>
                         </li>
                         <li>
@@ -214,7 +223,7 @@
                 <li>
                     <a href="{{ url('/artikel') }}"
                         class="block py-2 px-3  
-                        {{ request()->is('artikel') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
+                        {{ $isArtikelRoute ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
                         aria-current="page">
                         ARTIKEL
                     </a>
@@ -230,14 +239,14 @@
 
                 {{-- <div class="grid grid-cols-2 gap-4 mt-4">
                     <button type="button"
-                        class="inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100  dark:hover:text-white">
+                        class="inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100 ">
                         <img src="{{ asset('assets/lang/id.svg') }}" class="h-4 mr-1 border border-gray-900"
                             alt="INDONESIA">
                         ID
                     </button>
 
                     <button type="button"
-                        class="inline-flex items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100  dark:hover:text-white">
+                        class="inline-flex items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 rounded-lg cursor-pointer hover:bg-gray-100 ">
                         <img src="{{ asset('assets/lang/uk.svg') }}" class="h-4 mr-1" alt="ENGLAND">
                         EN
                     </button>
@@ -250,14 +259,14 @@
 
 {{-- mega menu --}}
 <section id="mega-menu-full-dropdown"
-    class="nol:hidden md:hidden overflow-y-auto lg:hidden fixed inset-x-0 top-[80px] bg-white z-20 dark:bg-gray-800 dark:border-gray-600">
+    class="nol:hidden md:hidden overflow-y-auto lg:hidden fixed inset-x-0 top-[80px] bg-white z-20">
     <h2 class="px-8 pt-4 container mt-2 max-w-screen-xl mx-auto text-2xl">
         Layanan Kami
         <hr class="mt-2">
     </h2>
 
     <nav
-        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 pt-2 px-6 h-screen overflow-y-auto max-w-screen-xl mx-auto text-gray-900 dark:text-white">
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 pt-2 px-6 h-screen overflow-y-auto max-w-screen-xl mx-auto text-gray-900">
         <ul aria-labelledby="mega-menu-full-dropdown-button">
             <li>
                 <a href="{{ url('/pendirian-perusahaan') }}"
@@ -295,7 +304,7 @@
         </ul>
         <ul>
             <li>
-                <a href="{{ url('/fastkontruksi') }}"
+                <a href="{{ url('/fastkonstruksi') }}"
                     class="flex items-start p-3 rounded-lg hover:bg-white hover:shadow-custom ">
                     <svg class="mr-1 w-16 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 576 512">
@@ -304,7 +313,7 @@
                     </svg>
 
                     <div class="ml-4">
-                        <h3 class="font-semibold">FASTKONTRUKSI</h3>
+                        <h3 class="font-semibold">FASTKONSTRUKSI </h3>
                         <p class="text-sm text-gray-500 ">
                             Layanan ijin usaha dalam persyaratan tender pemerintah / swasta.
                         </p>

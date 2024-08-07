@@ -42,7 +42,7 @@
 
         <div class="w-full h-full flex items-center border-2 rounded border-gray-400">
             <iframe class="w-full h-full rounded"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.718212279407!2d107.14481847732831!3d-6.300708927414482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699b27a5cbb513%3A0xd134f97daf174010!2sRuko%20Metro%20Boulevard%2C%20Jl.%20Niaga%20Raya%2C%20Pasirsari%2C%20Cikarang%20Sel.%2C%20Kabupaten%20Bekasi%2C%20Jawa%20Barat%2017530!5e0!3m2!1sen!2sid!4v1720444689685!5m2!1sen!2sid"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.893297075334!2d107.1777285!3d-6.277757200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698508851170ab%3A0x605f75f88f189094!2sGreen%20Market%20Jababeka!5e0!3m2!1sid!2sid!4v1722965656266!5m2!1sid!2sid"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>

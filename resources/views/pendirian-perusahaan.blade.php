@@ -62,7 +62,8 @@
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian PT</h3>
                         <p class="text-gray-700 text-md">
-                            deskripsi
+                            Untuk Anda yang ingin melindungi aset pribadi Anda, ingin membuka pintu menuju peluang yang
+                            lebih besar, dan perlindungan hukum yang lebih kuat, Mendirikan PT adalah langkah yang tepat!
                         </p>
                     </div>
 
@@ -93,7 +94,8 @@
                     <div class="p-4 flex-grow">
                         <h3 class="text-lg mb-4 font-bold font-jakartaEuy">Paket Pendirian CV</h3>
                         <p class="text-gray-700 text-md">
-                            deskripsi
+                            Untuk anda yang ingin mendirikan Badan Usaha tapi ingin administrasi yang sederhana Mendirikan
+                            CV adalah langkah yang tepat!
                         </p>
                     </div>
 

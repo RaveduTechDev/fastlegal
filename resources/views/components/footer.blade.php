@@ -14,7 +14,7 @@
                             clip-rule="evenodd" />
                     </svg>
                     <span class="pl-3">
-                        <a href="{{ url('https://www.facebook.com/people/Fast-Legal-Indonesia/61559019762384/') }}"
+                        <a href="{{ url('https://www.facebook.com/profile.php?id=61562316212922&mibextid=ZbWKwL') }}"
                             target="_blank" class="hover:text-danger-300">
                             Fast Legal Indonesia
                         </a>

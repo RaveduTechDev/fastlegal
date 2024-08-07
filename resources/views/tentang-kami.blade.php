@@ -30,11 +30,11 @@
                         Tentang FAST LEGAL lainnya
                     </h3>
 
-                    <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+                    <div class="mb-4 border-b border-gray-200">
                         <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab"
                             data-tabs-toggle="#default-styled-tab-content"
                             data-tabs-active-classes="text-danger-300 hover:text-danger-300 border-danger-300"
-                            data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-danger-300 dark:text-gray-400 border-gray-100 hover:border-danger-300 dark:border-gray-700 dark:hover:text-gray-300"
+                            data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-danger-300 border-gray-100 hover:border-danger-300"
                             role="tablist">
                             <li class="me-2" role="presentation">
                                 <button class="text-sm md:text-base inline-block p-4 border-b-2 rounded-t-lg"
@@ -45,32 +45,32 @@
 
                             <li class="me-2" role="presentation">
                                 <button
-                                    class="text-sm md:text-base inline-block p-4 border-b-2 rounded-t-lg hover:text-danger-300 hover:border-danger-300 dark:hover:text-gray-300"
+                                    class="text-sm md:text-base inline-block p-4 border-b-2 rounded-t-lg hover:text-danger-300 hover:border-danger-300"
                                     id="layanan-styled-tab" data-tabs-target="#layanan" type="button" role="tab"
                                     aria-controls="layanan" aria-selected="false">Layanan</button>
                             </li>
 
                             <li class="me-2" role="presentation">
                                 <button
-                                    class="text-sm md:text-base inline-block p-4 border-b-2 rounded-t-lg hover:text-danger-300 hover:border-danger-300 dark:hover:text-gray-300"
+                                    class="text-sm md:text-base inline-block p-4 border-b-2 rounded-t-lg hover:text-danger-300 hover:border-danger-300"
                                     id="pengalaman-styled-tab" data-tabs-target="#pengalaman" type="button" role="tab"
                                     aria-controls="pengalaman" aria-selected="false">Pengalaman</button>
                             </li>
                         </ul>
                     </div>
                     <div id="default-styled-tab-content">
-                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="sejarah" role="tabpanel"
+                        <div class="hidden p-4 rounded-lg bg-gray-50" id="sejarah" role="tabpanel"
                             aria-labelledby="profile-tab">
-                            <p class="text-sm md:text-base text-gray-500 dark:text-gray-400">
+                            <p class="text-sm md:text-base text-gray-500">
                                 FAST LEGAL beroperasi sejak 2022 dan baru mendirikan badan hukum pada tahun 2023, merupakan
                                 perusahaan yang menyediakan pengurusan legalitas perusahaan dan perorangan. Prinsip kami
                                 menjadi solusi dan memberikan kemudahan bagi pengusaha Indonesia untuk memulai bisnis dan
                                 terus mengembangkan bisnisnya.
                             </p>
                         </div>
-                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="layanan" role="tabpanel"
+                        <div class="hidden p-4 rounded-lg bg-gray-50" id="layanan" role="tabpanel"
                             aria-labelledby="layanan-tab">
-                            <p class="text-sm md:text-base text-gray-500 dark:text-gray-400">
+                            <p class="text-sm md:text-base text-gray-500">
                                 Layanan yang di tawarkan FAST LEGAL kerap berkembang dari waktu ke waktu. Di mulai dari
                                 pendirian perusahaan, kini FAST LEGAL memiliki lebih dari 30 Layanan lainya, seperti
                                 FASTHALAL (Sertifikasi Halal), FASTTAX (Pengurusan Pajak), FASTKONTRUKSI (Pengurusan Izin
@@ -79,9 +79,9 @@
                                 solusi bagi para pengusaha, kami akan terus berinovasi mengikuti semangat TIM FAST LEGAL.
                             </p>
                         </div>
-                        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="pengalaman" role="tabpanel"
+                        <div class="hidden p-4 rounded-lg bg-gray-50" id="pengalaman" role="tabpanel"
                             aria-labelledby="pengalaman-tab">
-                            <p class="text-sm md:text-base text-gray-500 dark:text-gray-400">
+                            <p class="text-sm md:text-base text-gray-500">
                                 Tim FAST LEGAL terdiri dari Individu pilihan dan merupakan Profesional yang berpengalaman.
                                 Kini FAST LEGAL sudah membantu lebih dari 500 Pengusaha di Indonesia untuk mendirikan
                                 perusahaan dan mengurus seluruh kebutuhan legalitas Perusahaan. FAST LEGAL akan terus

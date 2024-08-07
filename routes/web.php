@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -50,7 +51,7 @@ Route::get('/fasthalal', function () {
     return view('fasthalal', ['title' => 'Fastlegal Indonesia - Fasthalal']);
 });
 
-Route::get('/fastkontruksi', function () {
+Route::get('/fastkonstruksi', function () {
     return view('fastkontruksi', ['title' => 'Fastlegal Indonesia - Fastkontruksi']);
 });
 
@@ -74,6 +75,19 @@ Route::get('/hubungi-kami', function () {
     return view('kontak', ['title' => 'Fastlegal Indonesia - Hubungi Kami']);
 });
 
-Route::get('/artikel', function () {
-    return view('artikel', ['title' => 'Fastlegal Indonesia - Artikel']);
+// Route::get('/artikel', function () {
+//     return view('artikel', ['title' => 'Fastlegal Indonesia - Artikel']);
+// });
+
+Route::get('/artikel', [ArticleController::class, 'index']);
+Route::get('/artikel/detail/{slug}', [ArticleController::class, 'detail']);
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
 });

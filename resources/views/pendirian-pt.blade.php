@@ -72,7 +72,7 @@
                     <img class="w-3/4 mx-auto md:mt-4 rounded-t-lg h-40 md:h-auto lg:w-36 md:rounded-none md:rounded-s-lg"
                         src="{{ asset('assets/img/pendirian-pt.svg') }}" alt="pt perorangan">
                     <div class="flex flex-col justify-between p-4 leading-normal">
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                             PT PERORANGAN
                         </h2>
                         <h3 class="mb-2 text-lg text-danger-300 font-medium">IDR 1.200.000</h3>
@@ -148,7 +148,7 @@
                     <img class="w-3/4 mx-auto md:mt-4 rounded-t-lg h-40 md:h-auto lg:w-36 md:rounded-none md:rounded-s-lg"
                         src="{{ asset('assets/img/pendirian-pt.svg') }}" alt="pt silver">
                     <div class="flex flex-col justify-between p-4 leading-normal">
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                             PT SILVER
                         </h2>
                         <h3 class="mb-2 text-lg text-danger-300 font-medium">IDR 5.700.000</h3>
@@ -233,7 +233,7 @@
                     <img class="w-3/4 mx-auto md:mt-4 rounded-t-lg h-40 md:h-auto lg:w-36 md:rounded-none md:rounded-s-lg"
                         src="{{ asset('assets/img/pendirian-pt.svg') }}" alt="pt perorangan">
                     <div class="flex flex-col justify-between p-4 leading-normal">
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                             PT GOLD
                         </h2>
                         <h3 class="mb-2 text-lg text-danger-300 font-medium">IDR 6.700.000</h3>
@@ -350,7 +350,7 @@
                     <img class="w-3/4 mx-auto md:mt-4 rounded-t-lg h-40 md:h-auto lg:w-36 md:rounded-none md:rounded-s-lg"
                         src="{{ asset('assets/img/pendirian-pt.svg') }}" alt="pt perorangan">
                     <div class="flex flex-col justify-between p-4 leading-normal">
-                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                        <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
                             PT PLATINUM
                         </h2>
                         <h3 class="mb-2 text-lg text-danger-300 font-medium">IDR 7.500.000</h3>

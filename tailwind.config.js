@@ -1,9 +1,13 @@
-/** @type {import('tailwindcss').Config} */
+import preset from "./vendor/filament/support/tailwind.config.preset";
+
 export default {
+    presets: [preset],
     content: [
-        "./resources/**/*.blade.php",
+        "./app/Filament/**/*.php",
         "./resources/**/*.js",
         "./node_modules/flowbite/**/*.js",
+        "./resources/views/**/*.blade.php",
+        "./vendor/filament/**/*.blade.php",
     ],
     theme: {
         colors: {
