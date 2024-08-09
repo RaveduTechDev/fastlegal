@@ -1,11 +1,14 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('home', ['title' => 'Fastlegal Indonesia - Layanan Pengurusan Legalitas Perusahaan dan Perorangan']);
-});
+// Route::get('/', function () {
+//     return view('home', ['title' => 'Fastlegal Indonesia - Layanan Pengurusan Legalitas Perusahaan dan Perorangan']);
+// });
+
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/welcome', function () {
     return view('welcome');
@@ -81,6 +84,7 @@ Route::get('/hubungi-kami', function () {
 
 Route::get('/artikel', [ArticleController::class, 'index']);
 Route::get('/artikel/detail/{slug}', [ArticleController::class, 'detail']);
+Route::get('/kategori/{category:slug}', [ArticleController::class, 'category']);
 
 Route::middleware([
     'auth:sanctum',

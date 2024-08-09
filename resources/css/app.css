@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* 
+ "danger-300": "#ff204e",
+            "danger-500": "#ba1221",
+            "danger-700": "#a0153e",
+            "ungu-700": "#5d0e41",
+            "biru-700": "#00224d",
+            "hitam-500": "#343537",
+ */
+
 @layer components {
     @keyframes slideDown {
         0% {
@@ -30,6 +39,16 @@
     ::selection {
         background-color: #ff204e;
         color: #fff;
+    }
+
+    .danger-300 {
+        color: #ff204e;
+    }
+    .danger-500 {
+        color: #ba1221;
+    }
+    .danger-700 {
+        color: #a0153e;
     }
 
     .bg-hero {

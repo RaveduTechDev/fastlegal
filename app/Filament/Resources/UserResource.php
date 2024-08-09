@@ -12,6 +12,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
@@ -33,6 +34,9 @@ class UserResource extends Resource
                     ->label('Nama')
                     ->minLength(1)
                     ->maxLength(255),
+                TextInput::make('username')
+                    ->minLength(1)
+                    ->maxLength(255),
                 TextInput::make('email')->required()
                     ->email()
                     ->minLength(1)
@@ -43,9 +47,9 @@ class UserResource extends Resource
                     ->maxLength(255),
                 TextInput::make('password')
                     ->password()
-                    ->dehydrateStateUsing(fn ($state) => Hash::make($state))
-                    ->dehydrated(fn ($state) => filled($state))
-                    ->required(fn (string $context): bool => $context === 'create'),
+                    ->dehydrateStateUsing(fn($state) => Hash::make($state))
+                    ->dehydrated(fn($state) => filled($state))
+                    ->required(fn(string $context): bool => $context === 'create'),
                 Select::make('role')->required()
                     ->placeholder('-- Pilih Role --')
                     ->options([
@@ -70,9 +74,19 @@ class UserResource extends Resource
             ])
             ->filters([
                 //
+                SelectFilter::make('role')
+                    ->options([
+                        'admin' => 'Admin',
+                        'user' => 'User',
+                    ])
+                    ->label('Pilih Role')
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+
+                // jika ada akun yang login maka tidak bisa akses deleteAction akunnya 
+                Tables\Actions\DeleteAction::make(),
+
             ])
             ->bulkActions([
                 // Tables\Actions\BulkActionGroup::make([

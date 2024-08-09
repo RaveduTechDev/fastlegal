@@ -327,89 +327,53 @@
 
         <section class="max-w-screen-xl mx-auto p-6 my-10" id="business-news">
             <header class="mb-8 text-center">
-                <h2 class="text-2xl md:text-3xl font-bold uppercase tracking-wide font-jakartaEuy text-gray-900">Artikel
+                <h2 class="text-2xl md:text-3xl font-bold uppercase tracking-wide font-jakartaEuy text-gray-900">
+                    Artikel
                 </h2>
             </header>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="col-span-1 mb-8 md:mb-0">
-                    <a href="#" target="_blank" class="text-black">
-                        <div class="card shadow-lg rounded-lg overflow-hidden">
-                            <img class="w-full h-48 object-cover" src="{{ asset('assets/img/bg-header.jpg') }}"
-                                alt="" loading="lazy">
-                            <div class="p-4">
-                                <h5 class="text-lg font-bold mb-2 font-jakartaEuy">Lorem ipsum dolor sit amet
-                                    consectetur,
-                                    adipisicing elit. Voluptatem molestiae recusandae amet sapiente sunt magni.
-                                    Error illo ex maxime excepturi.</h5>
-                                <p class="text-gray-500 text-sm mb-4">20 Juni 2024</p>
-                                <p class="text-gray-700 text-sm mb-4">Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Eum et sint at iure eaque provident nam, nesciunt sunt fugit
-                                    quo facilis ipsum expedita perspiciatis deserunt dolores fuga obcaecati cum
-                                    fugiat veniam, dolore placeat alias vitae, nostrum eveniet. Laboriosam, saepe
-                                    explicabo!
-                                </p>
-                                <a href="" class="text-danger-300 hover:underline">Baca lebih lanjut</a>
+                @foreach ($articleMain as $article)
+                    <div class="col-span-1 mb-8 md:mb-0">
+                        <a href="{{ url('/artikel/detail/' . $article->slug) }}" class="text-black">
+                            <div class="card shadow-lg rounded-lg overflow-hidden">
+                                <img class="w-full h-48 object-cover" src="{{ asset('assets/img/bg-header.jpg') }}"
+                                    alt="{{ $article->title }}" loading="lazy">
+                                <div class="p-4">
+                                    <h5 class="text-lg font-bold mb-2 font-jakartaEuy">
+                                        {{ Str::limit($article->title, 50) }}
+                                    </h5>
+                                    <p class="text-gray-500 text-sm mb-4">{{ $article->created_at }}</p>
+                                    <p class="text-gray-700 text-sm mb-4">{{ $article->description }}</p>
+                                    <a href="{{ url('/artikel/detail/' . $article->slug) }}"
+                                        class="text-danger-300 hover:underline">
+                                        Baca lebih lanjut
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-span-1 mb-8 md:mb-0">
-                    <a href="" target="_blank" class="text-black">
-                        <div class="card shadow-lg rounded-lg overflow-hidden">
-                            <img class="w-full h-48 object-cover" src="{{ asset('assets/img/bg-header.jpg') }}"
-                                alt="" loading="lazy">
-                            <div class="p-4">
-                                <h5 class="text-lg font-bold mb-2 font-jakartaEuy">Lorem ipsum dolor sit amet
-                                    consectetur,
-                                    adipisicing elit. Voluptatem molestiae recusandae amet sapiente sunt magni.
-                                    Error illo ex maxime excepturi.</h5>
-                                <p class="text-gray-500 text-sm mb-4">20 Juni 2024</p>
-                                <p class="text-gray-700 text-sm mb-4">Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Eum et sint at iure eaque provident nam, nesciunt sunt fugit
-                                    quo facilis ipsum expedita perspiciatis deserunt dolores fuga obcaecati cum
-                                    fugiat veniam, dolore placeat alias vitae, nostrum eveniet. Laboriosam, saepe
-                                    explicabo!
-                                </p>
-                                <a href="" class="text-danger-300 hover:underline">Baca lebih lanjut</a>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                        </a>
+                    </div>
+                @endforeach
+
                 <div class="col-span-1 mb-8 md:mb-0">
                     <div>
-                        <a href="" target="_blank" class="text-black">
-                            <h6 class="font-jakartaEuy text-lg font-bold mb-1">Kenali Hak Desain Industri Atas
-                                Produk Anda!</h6>
-                            <p class="text-gray-500 text-sm mb-4">28 Juli, 2021</p>
+                        @foreach ($articleOther as $article)
+                            <a href="{{ url('/artikel/detail/' . $article->slug) }}" target="_blank" class="text-black">
+                                <h6 class="font-jakartaEuy text-lg font-bold mb-1">
+                                    {{ Str::limit($article->title, 60) }}
+                                </h6>
+                                <p class="text-gray-500 text-sm mb-4">{{ $article->created_at->format('j M Y') }}</p>
+                            </a>
+                            <div class="border-b-2 border-red-500 mb-4"></div>
+                        @endforeach
+
+                        <a href="{{ url('/artikel') }}" class="text-danger-300 group font-bold inline-flex items-center">
+                            Lihat Artikel Lain
+                            <svg class="ml-1 mt-1 w-4 h-4 text-danger-300 group-hover:translate-x-5" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                            </svg>
                         </a>
-                        <div class="border-b-2 border-red-500 mb-4"></div>
-                        <a href="" target="_blank" class="text-black">
-                            <h6 class="font-jakartaEuy text-lg font-bold mb-1">Inilah alasan mengapa Anda harus
-                                menggunakan Virtual
-                                Office di Indonesia!</h6>
-                            <p class="text-gray-500 text-sm mb-4">28 Juli, 2021</p>
-                        </a>
-                        <div class="border-b-2 border-red-500 mb-4"></div>
-                        <a href="" target="_blank" class="text-black">
-                            <h6 class="font-jakartaEuy text-lg font-bold mb-1">Merek Dagang Mu Belum Terdaftar?
-                                Berikut Ini Kasus
-                                Sengketa Merek Yang Terkenal Di Indonesia</h6>
-                            <p class="text-gray-500 text-sm mb-4">28 Juli, 2021</p>
-                        </a>
-                        <div class="border-b-2 border-red-500 mb-4"></div>
-                        <a href="" target="_blank" class="text-black">
-                            <h6 class="font-jakartaEuy text-lg font-bold mb-1">Hak Kekayaan Intelektual Bisa Jadi
-                                Jaminan!</h6>
-                            <p class="text-gray-500 text-sm mb-4">28 Juli, 2021</p>
-                        </a>
-                        <div class="border-b-2 border-danger-300 mb-4"></div>
-                        <a href="" target="_blank" class="text-black">
-                            <h6 class="font-jakartaEuy text-lg font-bold mb-1">Perhatikan Hal-Hal Berikut Dalam
-                                Penutupan PT!</h6>
-                            <p class="text-gray-500 text-sm mb-4">13 Juli, 2022</p>
-                        </a>
-                        <a href="" class="text-danger-300 font-bold">Lihat
-                            Artikel Lain <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -831,8 +795,8 @@
                 </div>
                 <div class="item px-2">
                     <div class="partner-logo">
-                        <img loading="lazy" class="w-60 img-partner" src="{{ asset('assets/img/client/logo_wet.png') }}"
-                            alt="WET WATER">
+                        <img loading="lazy" class="w-60 img-partner"
+                            src="{{ asset('assets/img/client/logo_wet.png') }}" alt="WET WATER">
                     </div>
                 </div>
                 <div class="item px-2">

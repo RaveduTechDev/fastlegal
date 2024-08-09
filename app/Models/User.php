@@ -26,8 +26,6 @@ class User extends Authenticatable implements FilamentUser
         return $this->role === 'admin';
     }
 
-    
-
     /**
      * The attributes that are mass assignable.
      *
@@ -35,6 +33,7 @@ class User extends Authenticatable implements FilamentUser
      */
     protected $fillable = [
         'name',
+        'username',
         'email',
         'password',
         'role',
@@ -58,6 +57,18 @@ class User extends Authenticatable implements FilamentUser
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function defaultProfilePhotoUrl()
+    {
+        return 'https://ui-avatars.com/api/' . implode('/', [
+
+            //IMPORTANT: Do not change this order
+            urlencode($this->name), // name
+            200, // image size
+            'fabebf', // background color
+            'FF204E', // font color
+        ]);
+    }
 
     /**
      * Get the attributes that should be cast.

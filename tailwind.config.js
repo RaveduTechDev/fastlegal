@@ -1,11 +1,14 @@
 import preset from "./vendor/filament/support/tailwind.config.preset";
+/** @type {import('tailwindcss').Config} */
 
 export default {
-    presets: [preset],
+    // presets: [preset],
     content: [
         "./app/Filament/**/*.php",
-        "./resources/**/*.js",
         "./node_modules/flowbite/**/*.js",
+        "./resources/**/*.js",
+        "./resources/**/*.vue",
+        "./resources/**/*.blade.php",
         "./resources/views/**/*.blade.php",
         "./vendor/filament/**/*.blade.php",
     ],
