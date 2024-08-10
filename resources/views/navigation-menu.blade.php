@@ -79,19 +79,20 @@
                 @endif
 
                 <!-- Settings Dropdown -->
-                <div class="ms-3 relative">
+                <div class="ms-3 hidden relative lg:inline-flex items-center">
+                    <p class="px-2 font-semibold">{{ Auth::user()->name }}</p>
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
                                 <button
-                                    class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-gray-300 transition">
+                                    class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-danger-300 transition">
                                     <img class="h-8 w-8 rounded-full object-cover"
                                         src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
                                     <button type="button"
-                                        class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-gray-500 bg-white hover:text-gray-700 focus:outline-none focus:bg-gray-50 active:bg-gray-50 transition ease-in-out duration-150">
+                                        class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-medium rounded-md text-danger-500 bg-white hover:text-danger-700 focus:outline-none focus:bg-danger-50 active:bg-danger-50 transition ease-in-out duration-150">
                                         {{ Auth::user()->name }}
 
                                         <svg class="ms-2 -me-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg"
@@ -105,14 +106,14 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
-                                {{ __('Manage Account') }}
+                                {{ __('Kelola Akun') }}
                             </div>
 
-                            <x-dropdown-link href="{{ route('profile.show') }}">
-                                {{ __('Profile') }}
-                            </x-dropdown-link>
+                            <a href="{{ route('profile.show') }}"
+                                class="block text-xs px-4 py-2 mb-2 font-medium hover:text-danger-300">
+                                {{ __('PROFILE') }}
+                            </a>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -122,13 +123,13 @@
 
                             <div class="border-t border-gray-200"></div>
 
-                            <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}" x-data>
                                 @csrf
 
-                                <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
-                                    {{ __('Log Out') }}
-                                </x-dropdown-link>
+                                <a href="{{ route('logout') }}" @click.prevent="$root.submit();"
+                                    class="block px-4 py-2 text-sm text-danger-300 font-medium">
+                                    {{ __('LOG OUT') }}
+                                </a>
                             </form>
                         </x-slot>
                     </x-dropdown>

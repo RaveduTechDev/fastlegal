@@ -20,10 +20,14 @@ use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
+use FilamentTiptapEditor\Enums\TiptapOutput;
+use FilamentTiptapEditor\TiptapEditor;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\Facades\Auth;
@@ -61,25 +65,37 @@ class ArticleResource extends Resource
                             ->placeholder('slug adalah link untuk judul')
                             ->unique(ignoreRecord: true)
                             ->required(),
-                        Hidden::make('user_id')->dehydrateStateUsing(fn () => Auth::id()),
+                        Hidden::make('user_id')->dehydrateStateUsing(fn() => Auth::id()),
                         Textarea::make('description')->required()
                             ->placeholder('Deskripsi Singkat Tentang Artikel')
                             ->columnSpanFull()
                             ->label('Deskripsi'),
-                        RichEditor::make('content')
-                            ->placeholder('Konten Artikel')
+
+                        TiptapEditor::make('content')
                             ->label('Konten')
-                            ->fileAttachmentsDirectory('articles/attachments')
-                            ->columnSpanFull(),
+                            ->placeholder('Konten Artikel')
+                            ->columnSpanFull()
+                            ->disk('public')
+                            ->output(TiptapOutput::Html)
+                            ->directory('articles/attachments'),
+
                     ])->columnSpan(2)->columns(2),
 
                 Section::make('Informasi Tambahan')
                     ->schema([
-                        FileUpload::make('thumbnail')->image()->required()
+                        // FileUpload::make('thumbnail')->image()->required()
+                        //     ->label('Thumbnail')
+                        //     ->image()
+                        //     ->directory('articles/thumbnails')
+                        //     ->uploadingMessage('Sedang Mengunggah Thumbnail'),
+                        SpatieMediaLibraryFileUpload::make('thumbnail')
                             ->label('Thumbnail')
                             ->image()
-                            ->directory('articles/thumbnails')
-                            ->uploadingMessage('Sedang Mengunggah Thumbnail'),
+                            ->imageEditor()
+                            ->required()
+                            ->rules('mimes:jpeg,png,svg,gif,webp')
+                            ->maxFiles(1)
+                            ->maxSize(2048),
                         Select::make('category_id')->required()
                             ->label('Kategori')
                             ->placeholder('-- Pilih Kategori --')
@@ -102,10 +118,13 @@ class ArticleResource extends Resource
         return $table
             ->columns([
                 // show thumbnail
-                ImageColumn::make('thumbnail'),
-                TextColumn::make('title')->label('Judul')->searchable()->sortable(),
-                TextColumn::make('user.name')->label('Author')->sortable(),
+                SpatieMediaLibraryImageColumn::make('thumbnail')->label('Thumbnail'),
 
+                TextColumn::make('title')->label('Judul')
+                    ->limit(40)
+                    ->searchable()
+                    ->sortable(),
+                TextColumn::make('user.name')->label('Author')->sortable(),
                 TextColumn::make('category.name')->label('Kategori')->sortable(),
 
                 TextColumn::make('status')

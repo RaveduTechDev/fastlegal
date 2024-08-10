@@ -9,7 +9,7 @@
         <section class="flex flex-wrap max-w-screen-xl mx-auto pb-6 px-6 mb-10">
             <div id="post" class="w-full md:w-2/3 lg:w-3/4">
                 @if (request('search') || request('category') || request('author'))
-                    <h3 class="text-lg mb-6 inline-flex items-center">
+                    <h5 class="text-lg mb-6 inline-flex items-center">
                         @if (request('search'))
                             <svg class="w-4 h-4 text-bold" fill="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20">
@@ -30,7 +30,7 @@
                             </svg>
                         @endif
                         <div class="ml-2">{!! $sub_title !!}</div>
-                    </h3>
+                    </h5>
                 @else
                     <p>{!! $sub_title !!}</p>
                 @endif
@@ -40,8 +40,13 @@
                     <article class="flex items-start mb-4 py-2 mt-6">
                         <figure class="w-40 h-20 sm:w-full sm:h-auto md:w-1/3 overflow-hidden">
                             <a href="{{ url('/artikel/detail/' . $article->slug) }}">
-                                <img src="{{ asset('assets/img/bg-header.jpg') }}" alt="nyenye"
-                                    class="object-cover w-40 h-20  sm:h-48 sm:w-96 shadow-md">
+                                @if ($article->getFirstMediaUrl() != null)
+                                    <img src="{{ $article->getFirstMediaUrl() }}" alt="{{ $article->title }}"
+                                        class="object-cover w-40 h-20  sm:h-48 sm:w-96 shadow-md">
+                                @else
+                                    <img src="{{ asset('assets/img/blank-image.jpg') }}" alt="{{ $article->title }}"
+                                        class="object-cover w-40 h-20  sm:h-48 sm:w-96 shadow-md">
+                                @endif
                             </a>
                         </figure>
 
@@ -93,9 +98,12 @@
 
                     <hr class="border-b border-gray-200 my-4 md:mr-10">
                 @empty
-                    <h3 class="text-2xl"><span class="text-danger-300">*</span> Artikel tidak ditemukan</h3>
-                    <a class="inline-flex text-danger-300 hover:underline" href="{{ url('/artikel') }}">&laquo; Kembali ke
-                        artikel</a>
+                    <h3 class="text-2xl mt-4"><span class="text-danger-300">*</span> Artikel tidak ada yang ditampilkan</h3>
+                    @if (request('search') || request('category') || request('author'))
+                        <a class="text-danger-300 mt-4 hover:underline " href="{{ url('/artikel') }}">&LeftArrow; Kembali
+                            ke
+                            artikel</a>
+                    @endif
                 @endforelse
                 <nav class="mt-8 lg:mr-4" aria-label="Article">
                     {{ $articles->onEachSide(1)->links('vendor.pagination.tailwind') }}
@@ -109,7 +117,7 @@
 
                 <div class="mb-6">
                     <h4 class="text-lg font-semibold mb-4">
-                        <a href="" class="hover:underline">Artikel Lainnya</a>
+                        <a href="{{ url('/artikel') }}" class="hover:underline">Artikel Lainnya</a>
                     </h4>
                     <ul>
                         @foreach ($articleOther->shuffle() as $article)
@@ -117,8 +125,13 @@
                                 <div class="flex items-start ">
                                     <a href="#" class="inline-block mr-3">
                                         <div class="w-20 h-20 bg-cover bg-center">
-                                            <img src="{{ asset('assets/img/bg-header.jpg') }}"
-                                                alt="{{ $article->title }}">
+                                            @if ($article->getFirstMediaUrl() != null)
+                                                <img src="{{ $article->getFirstMediaUrl('articles') }}"
+                                                    alt="{{ $article->title }}">
+                                            @else
+                                                <img src="{{ asset('assets/img/blank-image.jpg') }}"
+                                                    alt="{{ $article->title }}">
+                                            @endif
                                         </div>
                                     </a>
                                     <div class="text-sm">

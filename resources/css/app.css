@@ -41,7 +41,55 @@
         color: #fff;
     }
 
-    .danger-300 {
+    .content-article img {
+        @apply rounded-lg;
+    }
+
+    .content-article h2 {
+        @apply text-xl md:text-3xl font-bold font-jakartaEuy;
+    }
+
+    .content-article h3 {
+        @apply text-lg md:text-2xl font-bold  font-jakartaEuy;
+    }
+
+    .content-article h4 {
+        @apply text-base md:text-xl font-bold  font-jakartaEuy;
+    }
+
+    .content-article h5 {
+        @apply text-sm md:text-lg font-bold  font-jakartaEuy;
+    }
+
+    .content-article p {
+        @apply mt-2;
+    }
+
+    .content-article ul {
+        @apply list-disc ml-4;
+    }
+
+    .content-article ol {
+        @apply list-decimal ml-4;
+    }
+
+    .content-article blockquote {
+        @apply p-4 md:py-2 lg:px-12 mt-4 mb-6 rounded-md border-s-8 border-danger-300 bg-red-100;
+    }
+
+    .content-article blockquote p {
+        @apply mt-0;
+    }
+
+    .content-article summary {
+        @apply flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3;
+    }
+
+    .content-article iframe {
+        @apply rounded-lg mt-4;
+    }
+
+    .butto .danger-300 {
         color: #ff204e;
     }
     .danger-500 {

@@ -4,7 +4,7 @@
             <img src="{{ asset('assets/img/F.png') }}" class="h-16" alt="Logo FASTLEGAL" />
         </a>
 
-        <div class="flex items-center mt-2 lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
+        <div class="flex items-center mt-1 lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
             {{-- <button type="button"
                 class="hidden lg:inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100 ">
                 <img src="{{ asset('assets/lang/id.svg') }}" class="h-4 mr-1 border border-gray-900" alt="INDONESIA">
@@ -21,7 +21,7 @@
 
             @auth
                 <!-- Settings Dropdown -->
-                <div class="ms-3 hidden relative md:inline-flex items-center">
+                <div class="ms-3 hidden relative lg:inline-flex items-center">
                     <p class="px-2 font-semibold">{{ Auth::user()->name }}</p>
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
@@ -48,14 +48,19 @@
                         </x-slot>
 
                         <x-slot name="content">
-                            <!-- Account Management -->
                             <div class="block px-4 py-2 text-xs text-gray-400">
-                                {{ __('Mengelola Akun') }}
+                                {{ __('Kelola Akun') }}
                             </div>
 
-                            <x-dropdown-link href="{{ route('profile.show') }}">
-                                {{ __('Profile') }}
-                            </x-dropdown-link>
+                            <a href="{{ route('profile.show') }}"
+                                class="block text-xs px-4 py-2 font-medium hover:text-danger-300">
+                                {{ __('PROFILE') }}
+                            </a>
+
+                            <a href="{{ route('dashboard') }}"
+                                class="block text-xs px-4 py-2 mb-2 font-medium hover:text-danger-300">
+                                {{ __('DASHBOARD') }}
+                            </a>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -65,27 +70,36 @@
 
                             <div class="border-t border-gray-200"></div>
 
-                            <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}" x-data>
                                 @csrf
 
-                                <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
-                                    {{ __('Log Out') }}
-                                </x-dropdown-link>
+                                <a href="{{ route('logout') }}" @click.prevent="$root.submit();"
+                                    class="block px-4 py-2 text-sm text-danger-300 font-medium">
+                                    {{ __('LOG OUT') }}
+                                </a>
                             </form>
                         </x-slot>
                     </x-dropdown>
                 </div>
             @endauth
 
-            <ul class="font-semibold hidden lg:inline-flex text-sm ">
-                <li>
-                    <a href="{{ url('/hubungi-kami') }}"
-                        class="ml-[10px] block px-2 py-2 rounded-md bg-danger-300 hover:bg-danger-700 text-white transition ease-in">
-                        HUBUNGI KAMI
-                    </a>
-                </li>
-            </ul>
+            @guest
+                <ul class="font-semibold hidden lg:inline-flex items-center text-sm ">
+                    <li>
+                        <a href="{{ url('/register') }}"
+                            class="ml-[10px] block px-4 py-2 rounded-md bg-transparent border-2 border-danger-300 hover:bg-danger-300 text-danger-300 hover:text-white transition ease-in">
+                            REGISTER
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="{{ url('/login') }}"
+                            class="ml-[10px] block px-4 py-2 rounded-md border-2 border-danger-300 hover:border-danger-700 bg-danger-300 hover:bg-danger-700 text-white transition ease-in">
+                            LOGIN
+                        </a>
+                    </li>
+                </ul>
+            @endguest
 
             {{-- <ul class="font-semibold text-sm">
                 <li>
@@ -110,7 +124,7 @@
         </div>
 
         {{-- navbar --}}
-        <div class="md:lg:pl-4 lg:mt-2 grow-0 lg:grow hidden w-full lg:flex lg:w-auto lg:order-1">
+        <div class="md:lg:pl-4 lg:mt-1 grow-0 lg:grow hidden w-full lg:flex lg:w-auto lg:order-1">
             <ul
                 class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-7 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white lg:dark:bg-gray-900">
                 <li>
@@ -151,6 +165,15 @@
                             break;
                         }
                     }
+
+                    $otherRoutes = ['artikel', 'artikel/*', 'comment/*', 'user/*', 'kategori/*', 'partner-client'];
+                    $isOtherRoute = false;
+                    foreach ($otherRoutes as $otherRoute) {
+                        if (request()->is($otherRoute)) {
+                            $isOtherRoute = true;
+                            break;
+                        }
+                    }
                 @endphp
 
                 <li>
@@ -163,26 +186,54 @@
                                 d="m1 1 4 4 4-4" />
                         </svg>
                     </button>
-
                 </li>
                 <li>
                     <a href="{{ url('/tentang-kami') }}"
-                        class="block py-2 px-2 lg:p-0 {{ request()->is('tentang-kami') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 lg:dark:hover:text-blue-500  lg:dark:hover:bg-transparent">
+                        class="block py-2 px-2 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
                         TENTANG KAMI
                     </a>
                 </li>
+
                 <li>
-                    <a href="{{ url('/partner-client') }}"
-                        class="block py-2 px-2 lg:p-0 {{ request()->is('partner-client') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 lg:dark:hover:text-blue-500  lg:dark:hover:bg-transparent">
-                        PARTNER & CLIENT
+                    <a href="{{ url('/hubungi-kami') }}"
+                        class="block py-2 px-2 lg:p-0 {{ request()->is('hubungi-kami') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 lg:dark:hover:text-blue-500  lg:dark:hover:bg-transparent">
+                        HUBUNGI KAMI
                     </a>
                 </li>
+
                 <li>
-                    <a href="{{ url('/artikel') }}"
-                        class="block py-2 px-2 lg:p-0 {{ $isArtikelRoute ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 lg:dark:hover:text-blue-500  lg:dark:hover:bg-transparent">
-                        ARTIKEL
+                    <a href="#" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
+                        data-dropdown-trigger="hover"
+                        class="flex items-center py-2 px-2 lg:p-0 {{ $isOtherRoute ? 'text-danger-300' : 'text-gray-900' }} rounded  lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
+                        LAINNYA
+                        <svg class="w-2.5 h-2.5 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 4 4 4-4" />
+                        </svg>
                     </a>
+
+                    <div id="dropdownHover"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 ">
+                        <ul class="py-2 text-sm text-gray-700" aria-labelledby="dropdownHoverButton">
+                            <li>
+                                <a href="{{ url('/partner-client') }}"
+                                    class="block px-4 py-2 {{ request()->is('partner-client') ? 'bg-danger-300 text-white' : 'hover:bg-gray-100' }}">
+                                    PARTNER & CLIENT
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ url('/artikel') }}"
+                                    class="block px-4 py-2 {{ $isArtikelRoute ? 'bg-danger-300 text-white' : 'hover:bg-gray-100' }}">
+                                    ARTIKEL
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
                 </li>
+
+
             </ul>
         </div>
 
@@ -192,7 +243,7 @@
             tabindex="-1" aria-labelledby="drawer-right-label">
 
             <button type="button" data-drawer-hide="drawer-nav" aria-controls="drawer-nav"
-                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-10 h-10 absolute top-3.5 end-3.5 inline-flex items-center justify-center">
+                class="text-gray-400 mt-2 mr-2 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-10 h-10 absolute top-3.5 end-3.5 inline-flex items-center justify-center">
                 <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 14 14">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -201,8 +252,55 @@
                 <span class="sr-only">Close menu</span>
             </button>
 
+            @auth
+                <a href="{{ route('profile.show') }}"
+                    class="ms-3 mt-3 lg:hidden relative inline-flex items-center overflow-hidden">
+                    @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
+                        <img class="h-8 w-8 rounded-full object-cover" src="{{ Auth::user()->profile_photo_url }}"
+                            alt="{{ Auth::user()->name }}" />
+                    @endif
+                    <p class="px-2 font-semibold">{{ Str::limit(Auth::user()->name, 20) }}</p>
+                </a>
+            @endauth
+
             <ul
-                class="flex flex-col font-semibold p-4 mt-10 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white">
+                class="flex flex-col font-semibold p-4 @guest{{ 'mt-12' }} @endguest @auth{{ 'mt-0' }} @endauth rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white">
+
+                @auth
+                    <!-- Account Management -->
+                    <div class="block py-2 text-xs text-gray-400 mt-4">
+                        {{ __('KELOLA AKUN') }}
+                    </div>
+
+                    <li>
+                        <a href="{{ route('profile.show') }}"
+                            class="block py-2 px-3 text-gray-900 hover:bg-gray-200 rounded duration-300"
+                            aria-current="page">
+                            PROFILE
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="{{ route('dashboard') }}"
+                            class="block py-2 px-3 text-gray-900 hover:bg-gray-200 rounded duration-300"
+                            aria-current="page">
+                            DASHBOARD
+                        </a>
+                    </li>
+
+                    @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
+                        <x-dropdown-link href="{{ route('api-tokens.index') }}">
+                            {{ __('API Tokens') }}
+                        </x-dropdown-link>
+                    @endif
+
+                    <div class="border-t border-gray-200"></div>
+
+                    <div class="block py-2 text-xs text-gray-400 mt-4">
+                        {{ __('MENU') }}
+                    </div>
+                @endauth
+
                 <li>
                     <a href="{{ url('/') }}"
                         class="block py-2 px-3  
@@ -265,37 +363,64 @@
                 </li>
                 <li>
                     <a href="{{ url('/tentang-kami') }}"
-                        class="block py-2 px-3  
-                        {{ request()->is('tentang-kami') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
+                        class="block py-2 px-3 {{ request()->is('tentang-kami') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
                         aria-current="page">
                         TENTANG KAMI
                     </a>
                 </li>
                 <li>
                     <a href="{{ url('/partner-client') }}"
-                        class="block py-2 px-3  
-                        {{ request()->is('partner-client') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
+                        class="block py-2 px-3 {{ request()->is('partner-client') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
                         aria-current="page">
                         PARTNER & CLIENT
                     </a>
                 </li>
                 <li>
                     <a href="{{ url('/artikel') }}"
-                        class="block py-2 px-3  
-                        {{ $isArtikelRoute ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
+                        class="block py-2 px-3 {{ $isArtikelRoute ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
                         aria-current="page">
                         ARTIKEL
                     </a>
                 </li>
 
-                <li>
+                <li class="flex-grow">
                     <a href="{{ url('/hubungi-kami') }}"
-                        class="block py-2 px-3 text-white bg-danger-300 hover:bg-danger-700 rounded duration-300"
+                        class="block py-2 px-3 {{ request()->is('hubungi-kami') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
                         aria-current="page">
                         HUBUNGI KAMI
                     </a>
                 </li>
 
+                @auth<div class="border-t border-gray-200 mt-2"></div>@endauth
+                <div class="grid grid-cols-2 gap-4 mt-10">
+                    @auth
+
+                        <form method="POST" action="{{ route('logout') }}" x-data>
+                            @csrf
+
+                            <x-dropdown-link href="{{ route('logout') }}" @click.prevent="$root.submit();">
+                                {{ __('LOGOUT') }}
+                            </x-dropdown-link>
+                        </form>
+                    @endauth
+                    @guest
+                        <li>
+                            <a href="{{ url('/register') }}"
+                                class="block py-2 px-3 bg-transparent border-2 border-danger-300 hover:bg-danger-300 text-danger-300 text-center hover:text-white transition ease-in rounded duration-300 "
+                                aria-current="page">
+                                REGISTER
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="{{ url('/login') }}"
+                                class="block py-2 px-3 border-2 border-danger-300 hover:border-danger-700 bg-danger-300 hover:bg-danger-700 text-center text-white transition ease-in rounded duration-300 "
+                                aria-current="page">
+                                LOGIN
+                            </a>
+                        </li>
+                    @endguest
+                </div>
                 {{-- <div class="grid grid-cols-2 gap-4 mt-4">
                     <button type="button"
                         class="inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100 ">
