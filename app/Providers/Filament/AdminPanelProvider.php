@@ -29,7 +29,8 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->login()
             ->brandLogo(asset('assets/img/F.png'))
-            ->brandLogoHeight(fn () => auth()->check() ? '3rem' : '4rem')
+            ->brandLogoHeight(fn() => auth()->check() ? '3rem' : '4rem')
+            ->favicon(asset('assets/img/FL.png'))
             ->colors([
                 'primary' => "#ff204e",
                 'success' => "#00bfa5",
