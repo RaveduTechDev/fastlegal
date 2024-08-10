@@ -9,7 +9,9 @@
                 <br>
                 <span class="text-sm text-gray-500">*syarat dan ketentuan berlaku</span>
             </p>
-            <form class="whatsapp-form">
+            <form class="whatsapp-form" method="POST">
+                @csrf
+
                 <div class="mb-4">
                     <input
                         class="block w-full px-4 py-2 border-2 focus:outline-0 focus:outline-transparent focus:ring-0  border-gray-300 rounded focus:outline-none focus:border-danger-300"

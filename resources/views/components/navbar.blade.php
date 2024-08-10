@@ -21,15 +21,20 @@
 
             @auth
                 <!-- Settings Dropdown -->
-                <div class="ms-3 hidden relative lg:inline-flex items-center">
+                <div class="mr-3 hidden relative lg:inline-flex items-center">
                     <p class="px-2 font-semibold">{{ Auth::user()->name }}</p>
                     <x-dropdown align="right" width="48">
                         <x-slot name="trigger">
                             @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
-                                <button
-                                    class="flex text-sm border-2 border-transparent rounded-full focus:outline-none focus:border-danger-300 transition">
-                                    <img class="h-8 w-8 rounded-full object-cover"
+                                <button class="flex text-sm items-center group rounded-full transition">
+                                    <img class="h-8 w-8 rounded-full object-cover group-focus:outline-none border-2 border-transparent group-focus:border-danger-300"
                                         src="{{ Auth::user()->profile_photo_url }}" alt="{{ Auth::user()->name }}" />
+
+                                    <svg class="w-2.5 h-2.5 ms-1 group-focus:rotate-180 transition" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="m1 1 4 4 4-4" />
+                                    </svg>
                                 </button>
                             @else
                                 <span class="inline-flex rounded-md">
@@ -80,15 +85,26 @@
                             </form>
                         </x-slot>
                     </x-dropdown>
+
+
                 </div>
+
+                <ul class="font-semibold hidden lg:inline-flex items-center text-sm ">
+                    <li>
+                        <a href="{{ url('/hubungi-kami') }}"
+                            class="ml-[10px] block px-4 py-2 rounded-md border-2 border-danger-300 hover:border-danger-700 bg-danger-300 hover:bg-danger-700 text-white transition ease-in">
+                            HUBUNGI KAMI
+                        </a>
+                    </li>
+                </ul>
             @endauth
 
             @guest
                 <ul class="font-semibold hidden lg:inline-flex items-center text-sm ">
                     <li>
-                        <a href="{{ url('/register') }}"
+                        <a href="{{ url('/hubungi-kami') }}"
                             class="ml-[10px] block px-4 py-2 rounded-md bg-transparent border-2 border-danger-300 hover:bg-danger-300 text-danger-300 hover:text-white transition ease-in">
-                            REGISTER
+                            HUBUNGI KAMI
                         </a>
                     </li>
 
@@ -193,14 +209,6 @@
                         TENTANG KAMI
                     </a>
                 </li>
-
-                <li>
-                    <a href="{{ url('/hubungi-kami') }}"
-                        class="block py-2 px-2 lg:p-0 {{ request()->is('hubungi-kami') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300 lg:dark:hover:text-blue-500  lg:dark:hover:bg-transparent">
-                        HUBUNGI KAMI
-                    </a>
-                </li>
-
                 <li>
                     <a href="#" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
                         data-dropdown-trigger="hover"
@@ -208,8 +216,8 @@
                         LAINNYA
                         <svg class="w-2.5 h-2.5 ms-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="none" viewBox="0 0 10 6">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m1 1 4 4 4-4" />
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 4 4 4-4" />
                         </svg>
                     </a>
 
@@ -233,13 +241,12 @@
                     </div>
                 </li>
 
-
             </ul>
         </div>
 
         {{-- sidebar di drawer --}}
         <aside id="drawer-nav"
-            class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto lg:hidden transition-transform duration-500 translate-x-full bg-white w-80"
+            class="fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto lg:hidden transition-transform duration-500 translate-x-full bg-white w-80"
             tabindex="-1" aria-labelledby="drawer-right-label">
 
             <button type="button" data-drawer-hide="drawer-nav" aria-controls="drawer-nav"
@@ -383,17 +390,18 @@
                     </a>
                 </li>
 
-                <li class="flex-grow">
-                    <a href="{{ url('/hubungi-kami') }}"
-                        class="block py-2 px-3 {{ request()->is('hubungi-kami') ? 'text-danger-300' : 'text-gray-900 hover:bg-gray-200' }} rounded duration-300"
-                        aria-current="page">
-                        HUBUNGI KAMI
-                    </a>
-                </li>
-
                 @auth<div class="border-t border-gray-200 mt-2"></div>@endauth
-                <div class="grid grid-cols-2 gap-4 mt-10">
+                <div class="grid grid-cols-2 gap-2 mt-10">
                     @auth
+                        @if (Auth::user()->role !== 'admin')
+                            <li>
+                                <a href="{{ url('/hubungi-kami') }}"
+                                    class="block py-2 px-1 bg-transparent text-sm border-2 border-danger-300 hover:bg-danger-300 text-danger-300 text-center hover:text-white transition ease-in rounded duration-300 "
+                                    aria-current="page">
+                                    HUBUNGI KAMI
+                                </a>
+                            </li>
+                        @endif
 
                         <form method="POST" action="{{ route('logout') }}" x-data>
                             @csrf
@@ -405,16 +413,16 @@
                     @endauth
                     @guest
                         <li>
-                            <a href="{{ url('/register') }}"
-                                class="block py-2 px-3 bg-transparent border-2 border-danger-300 hover:bg-danger-300 text-danger-300 text-center hover:text-white transition ease-in rounded duration-300 "
+                            <a href="{{ url('/hubungi-kami') }}"
+                                class="block py-2 px-1 bg-transparent text-sm border-2 border-danger-300 hover:bg-danger-300 text-danger-300 text-center hover:text-white transition ease-in rounded duration-300 "
                                 aria-current="page">
-                                REGISTER
+                                HUBUNGI KAMI
                             </a>
                         </li>
 
                         <li>
                             <a href="{{ url('/login') }}"
-                                class="block py-2 px-3 border-2 border-danger-300 hover:border-danger-700 bg-danger-300 hover:bg-danger-700 text-center text-white transition ease-in rounded duration-300 "
+                                class="block py-2 px-3 text-sm border-2 border-danger-300 hover:border-danger-700 bg-danger-300 hover:bg-danger-700 text-center text-white transition ease-in rounded duration-300 "
                                 aria-current="page">
                                 LOGIN
                             </a>

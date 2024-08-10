@@ -117,7 +117,7 @@
 
                 <div class="mb-6">
                     <h4 class="text-lg font-semibold mb-4">
-                        <a href="{{ url('/artikel') }}" class="hover:underline">Artikel Lainnya</a>
+                        <a href="" class="hover:underline">Artikel Lainnya</a>
                     </h4>
                     <ul>
                         @foreach ($articleOther->shuffle() as $article)
@@ -126,8 +126,7 @@
                                     <a href="#" class="inline-block mr-3">
                                         <div class="w-20 h-20 bg-cover bg-center">
                                             @if ($article->getFirstMediaUrl() != null)
-                                                <img src="{{ $article->getFirstMediaUrl('articles') }}"
-                                                    alt="{{ $article->title }}">
+                                                <img src="{{ $article->getFirstMediaUrl() }}" alt="{{ $article->title }}">
                                             @else
                                                 <img src="{{ asset('assets/img/blank-image.jpg') }}"
                                                     alt="{{ $article->title }}">
@@ -161,7 +160,6 @@
                                 </div>
                             </li>
                         @endforeach
-
                     </ul>
                 </div>
             </aside>

@@ -1,4 +1,4 @@
-<div id="whatsapp-button" class="fixed bottom-5 right-5 md:right-8 z-50">
+<div id="whatsapp-button" class="fixed bottom-5 right-5 md:right-8 z-30">
     <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
         target="_blank">
         <div

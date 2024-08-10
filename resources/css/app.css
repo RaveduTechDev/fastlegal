@@ -46,19 +46,19 @@
     }
 
     .content-article h2 {
-        @apply text-xl md:text-3xl font-bold font-jakartaEuy;
+        @apply text-xl md:text-3xl font-bold font-jakartaEuy mt-10;
     }
 
     .content-article h3 {
-        @apply text-lg md:text-2xl font-bold  font-jakartaEuy;
+        @apply text-lg md:text-2xl font-bold  font-jakartaEuy mt-8;
     }
 
     .content-article h4 {
-        @apply text-base md:text-xl font-bold  font-jakartaEuy;
+        @apply text-base md:text-xl font-bold  font-jakartaEuy mt-8;
     }
 
     .content-article h5 {
-        @apply text-sm md:text-lg font-bold  font-jakartaEuy;
+        @apply text-sm md:text-lg font-bold  font-jakartaEuy mt-6;
     }
 
     .content-article p {

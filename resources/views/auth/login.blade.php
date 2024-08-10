@@ -47,5 +47,11 @@
                 </x-button>
             </div>
         </form>
+
+        <div class="border-t border-gray-200 my-4"></div>
+
+        <a class="text-center mt-4 " href="{{ url('/register') }}">
+            Do you already have an account? <span class="text-danger-300 hover:underline"> Register</span>
+        </a>
     </x-authentication-card>
 </x-guest-layout>
