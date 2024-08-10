@@ -17,8 +17,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
 
     {{-- <link rel="stylesheet" href="{{ asset('lib/owlcarousel/css/owl.theme.default.min.css') }}"> --}}
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    {{-- <link rel="stylesheet" href="{{ asset('build/assets/app-DlJrcqd-.css') }}"> --}}
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <link rel="stylesheet" href="{{ asset('build/assets/app-D1D9QzBY.css') }}">
+    <script src="{{ asset('build/assets/app-qZAqPJAz.js') }}"></script>
 
 </head>
 
@@ -41,7 +42,6 @@
     <script src="{{ asset('lib/jquery.min.js') }}"></script>
     <script src="{{ asset('lib/owlcarousel/js/owl.carousel.min.js') }}"></script>
     <script src="{{ url('https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js') }}"></script>
-    {{-- <script src="{{ asset('build/assets/app-qZAqPJAz.js') }}"></script> --}}
 
 </body>
 

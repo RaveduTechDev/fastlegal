@@ -200,13 +200,13 @@
                 </li>
                 <li>
                     <a href="{{ url('/tentang-kami') }}"
-                        class="block py-2 px-2 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
+                        class="block py-2 px-2 lg:p-0 {{ request()->is('tentang-kami') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
                         TENTANG KAMI
                     </a>
                 </li>
                 <li>
                     <a href="{{ url('/partner-client') }}"
-                        class="block py-2 px-2 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
+                        class="block py-2 px-2 lg:p-0 {{ request()->is('partner-client') ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
                         PARTNER & CLIENT
                     </a>
                 </li>
