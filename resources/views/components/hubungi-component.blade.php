@@ -9,7 +9,7 @@
                 <br>
                 <span class="text-sm text-gray-500">*syarat dan ketentuan berlaku</span>
             </p>
-            <form class="whatsapp-form" method="POST">
+            <form class="whatsapp-form" method="POST" action="">
                 @csrf
 
                 <div class="mb-4">

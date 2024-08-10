@@ -4,6 +4,7 @@
             <img src="{{ asset('assets/img/F.png') }}" class="h-16" alt="Logo FASTLEGAL" />
         </a>
 
+        {{-- button --}}
         <div class="flex items-center mt-1 lg:order-2 space-x-1 lg:space-x-0 rtl:space-x-reverse">
             {{-- <button type="button"
                 class="hidden lg:inline-flex mr-[4px] items-center font-semibold justify-center px-2 py-2 text-sm text-gray-900 rounded-lg cursor-pointer bg-gray-100 hover:bg-gray-100 ">
@@ -140,15 +141,9 @@
         </div>
 
         {{-- navbar --}}
-        <div class="md:lg:pl-4 lg:mt-1 grow-0 lg:grow hidden w-full lg:flex lg:w-auto lg:order-1">
+        <div class="md:lg:pl-4 lg:mt-1 grow-0 lg:grow hidden ml-4 w-full lg:flex lg:w-auto lg:order-1">
             <ul
                 class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-7 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white lg:dark:bg-gray-900">
-                <li>
-                    {{-- aria-current="page" --}}
-                    <a href="{{ url('/') }}"
-                        class="block py-2 px-2 rounded bg-transparent text-sm {{ request()->is('/') ? 'text-danger-300' : 'text-gray-900' }} hover:text-danger-300 duration-300 lg:p-0">BERANDA</a>
-                </li>
-
                 @php
                     $layananRoutes = [
                         'pendirian-perusahaan',
@@ -210,6 +205,19 @@
                     </a>
                 </li>
                 <li>
+                    <a href="{{ url('/partner-client') }}"
+                        class="block py-2 px-2 lg:p-0 text-gray-900 rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
+                        PARTNER & CLIENT
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url('/artikel') }}"
+                        class="block py-2 px-2 lg:p-0 {{ $isArtikelRoute ? 'text-danger-300' : 'text-gray-900' }} rounded hover:bg-gray-100 lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
+                        ARTIKEL
+                    </a>
+                </li>
+
+                {{-- <li>
                     <a href="#" id="dropdownHoverButton" data-dropdown-toggle="dropdownHover"
                         data-dropdown-trigger="hover"
                         class="flex items-center py-2 px-2 lg:p-0 {{ $isOtherRoute ? 'text-danger-300' : 'text-gray-900' }} rounded  lg:hover:bg-transparent lg:text-sm lg:hover:text-danger-300 duration-300">
@@ -239,7 +247,7 @@
 
                         </ul>
                     </div>
-                </li>
+                </li> --}}
 
             </ul>
         </div>
