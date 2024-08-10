@@ -64,9 +64,16 @@
                             </a>
 
                             <a href="{{ route('dashboard') }}"
-                                class="block text-xs px-4 py-2 mb-2 font-medium hover:text-danger-300">
+                                class="block text-xs px-4 py-2 font-medium hover:text-danger-300">
                                 {{ __('DASHBOARD') }}
                             </a>
+
+                            @if (Auth::user()->role !== 'user')
+                                <a href="{{ url('/admin') }}"
+                                    class="block text-xs px-4 py-2 mb-2 font-medium hover:text-danger-300">
+                                    {{ __('ADMIN') }}
+                                </a>
+                            @endif
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-dropdown-link href="{{ route('api-tokens.index') }}">
