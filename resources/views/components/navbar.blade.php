@@ -141,7 +141,7 @@
         </div>
 
         {{-- navbar --}}
-        <div class="md:lg:pl-4 lg:mt-1 grow-0 lg:grow hidden ml-4 w-full lg:flex lg:w-auto lg:order-1">
+        <div class="md:lg:pl-4 lg:mt-1 grow-0 lg:grow hidden ml-2 w-full lg:flex lg:w-auto lg:order-1">
             <ul
                 class="flex flex-col font-medium p-4 lg:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:space-x-7 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 lg:bg-white lg:dark:bg-gray-900">
                 @php

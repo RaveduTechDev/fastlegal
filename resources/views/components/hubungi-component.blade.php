@@ -9,33 +9,52 @@
                 <br>
                 <span class="text-sm text-gray-500">*syarat dan ketentuan berlaku</span>
             </p>
-            <form class="whatsapp-form" method="POST" action="">
+            <form class="form" method="POST" action="{{ route('contact.send') }}">
                 @csrf
 
                 <div class="mb-4">
                     <input
                         class="block w-full px-4 py-2 border-2 focus:outline-0 focus:outline-transparent focus:ring-0  border-gray-300 rounded focus:outline-none focus:border-danger-300"
-                        id="wa_name" name="name" type="text" placeholder="Nama Lengkap *" required>
+                        id="name" name="name" value="{{ old('name') }}" type="text"
+                        placeholder="Nama Lengkap *" required>
+                    @error('name')
+                        <span class="text-danger-300 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-4">
                     <input
                         class="block w-full px-4 py-2 border-2 focus:outline-0 focus:outline-transparent focus:ring-0  border-gray-300 rounded focus:outline-none focus:border-danger-300"
-                        id="wa_email" name="email" type="email" placeholder="Alamat Email *" required>
+                        id="wa_email" name="email" type="email" value="{{ old('email') }}"
+                        placeholder="Alamat Email *" required>
+                    @error('email')
+                        <span class="text-danger-300 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-4">
                     <input
                         class="block w-full px-4 py-2 border-2 focus:outline-0 focus:outline-transparent focus:ring-0  border-gray-300 rounded focus:outline-none focus:border-danger-300"
-                        id="wa_number" name="phone" type="text" placeholder="Nomor Telepon / Whatsapp *" required>
+                        id="wa_number" name="phone" type="number" value="{{ old('phone') }}"
+                        placeholder="Nomor Telepon / Whatsapp *" required>
+                    @error('phone')
+                        <span class="text-danger-300 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-4">
                     <input
                         class="block w-full px-4 py-2 border-2 focus:outline-0 focus:outline-transparent focus:ring-0  border-gray-300 rounded focus:outline-none focus:border-danger-300"
-                        id="wa_usaha" name="business" type="text" placeholder="Bidang Usaha">
+                        id="bidang_usaha" name="business_field" type="text" value="{{ old('business_field') }}"
+                        placeholder="Bidang Usaha">
+                    @error('business_field')
+                        <span class="text-danger-300 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <div class="mb-4">
                     <textarea
                         class="block w-full px-4 py-2 border-2 focus:outline-0 focus:outline-transparent focus:ring-0  border-gray-300 rounded focus:outline-none focus:border-danger-300"
-                        id="wa_textarea" name="message" rows="4" placeholder="Message" maxlength="5000"></textarea>
+                        id="message" name="message" rows="4" value="{{ old('message') }} placeholder="Message" maxlength="5000"></textarea>
+                    @error('message')
+                        <span class="text-danger-300 text-sm">{{ $message }}</span>
+                    @enderror
                 </div>
                 <button class="w-full py-2 bg-danger-300 text-white rounded transition hover:bg-danger-700"
                     type="submit">Kirim</button>

@@ -1,12 +1,9 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-
-// Route::get('/', function () {
-//     return view('home', ['title' => 'Fastlegal Indonesia - Layanan Pengurusan Legalitas Perusahaan dan Perorangan']);
-// });
 
 Route::get('/', [HomeController::class, 'index']);
 
@@ -78,9 +75,7 @@ Route::get('/hubungi-kami', function () {
     return view('kontak', ['title' => 'Fastlegal Indonesia - Hubungi Kami']);
 });
 
-// Route::get('/artikel', function () {
-//     return view('artikel', ['title' => 'Fastlegal Indonesia - Artikel']);
-// });
+Route::post('/hubungi-kami/send', [ContactController::class, 'send'])->name('contact.send');
 
 Route::get('/artikel', [ArticleController::class, 'index']);
 Route::get('/artikel/detail/{slug}', [ArticleController::class, 'detail']);

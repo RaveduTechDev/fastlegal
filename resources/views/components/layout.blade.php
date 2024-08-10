@@ -25,6 +25,14 @@
 <body>
     @include('components.navbar')
 
+    @if ($success = Session::get('success'))
+        @include('components.toast-success', ['success' => $success])
+    @endif
+
+    @if ($error = Session::get('error'))
+        @include('components.toast-success', ['error' => $error])
+    @endif
+
     @yield('content')
 
     @include('components.wa')
