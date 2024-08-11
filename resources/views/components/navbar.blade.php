@@ -93,18 +93,7 @@
                             </form>
                         </x-slot>
                     </x-dropdown>
-
-
                 </div>
-
-                <ul class="font-semibold hidden lg:inline-flex items-center text-sm ">
-                    <li>
-                        <a href="{{ url('/hubungi-kami') }}"
-                            class="ml-[10px] block px-4 py-2 rounded-md border-2 border-danger-300 hover:border-danger-700 bg-danger-300 hover:bg-danger-700 text-white transition ease-in">
-                            HUBUNGI KAMI
-                        </a>
-                    </li>
-                </ul>
             @endauth
 
             @guest
@@ -302,13 +291,23 @@
                         </a>
                     </li>
 
-                    <li class="mb-2">
+                    <li>
                         <a href="{{ route('dashboard') }}"
                             class="block py-2 px-3 text-gray-900 hover:bg-gray-200 rounded duration-300"
                             aria-current="page">
                             DASHBOARD
                         </a>
                     </li>
+                    @if (Auth::user()->role !== 'user')
+                        <li>
+                            <a href="{{ url('/admin') }}"
+                                class="block py-2 px-3 text-gray-900 hover:bg-gray-200 rounded duration-300"
+                                aria-current="page">
+                                ADMIN
+                            </a>
+                        </li>
+                    @endif
+                    <div class="mb-2"></div>
 
                     @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                         <x-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -585,17 +584,9 @@
         <ul>
             <li>
                 <a href="#" class="block p-3 rounded-lg hover:bg-white hover:shadow-custom ">
-                    <div class="font-semibold">Lorem ipsum dolor</div>
+                    <div class="font-semibold">Content</div>
                     <span class="text-sm text-gray-500 ">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sint!
-                    </span>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="block p-3 rounded-lg hover:bg-white hover:shadow-custom ">
-                    <div class="font-semibold">Tralala Trilili</div>
-                    <span class="text-sm text-gray-500 ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatibus?
+                        Deskripsi
                     </span>
                 </a>
             </li>

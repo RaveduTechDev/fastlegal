@@ -38,7 +38,7 @@ class CategoryResource extends Resource
                         $set('slug', Str::slug($state));
                     }),
                 TextInput::make('slug')
-                    ->label('Slug')
+                    ->label('Link Kategori')
                     ->minLength(1)
                     ->maxLength(255)
                     ->required()

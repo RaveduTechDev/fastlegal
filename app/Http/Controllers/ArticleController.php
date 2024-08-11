@@ -20,8 +20,9 @@ class ArticleController extends Controller
         $category_name = '';
         $user_name = '';
         if (request('category')) {
-            $category = Category::where('name', request('category'))->first();
-            $category_name = $category ? $category->name : 'kategori tidak ditemukan';
+            $category = Category::where('slug', request('category'))->first();
+            $category_search = '<strong>' . request('category') . '</strong>';
+            $category_name = $category ? $category->name : '<p class="text-sm sm:text-md font-semibold text-gray-800">kategori "' . $category_search . '" tidak ditemukan</p>';
         }
 
         if (request('author')) {

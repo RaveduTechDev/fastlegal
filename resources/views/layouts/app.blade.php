@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="{{ asset('assets/img/FL.png') }}" type="image/x-icon">
 
     <!-- Scripts -->
-    <link rel="stylesheet" href="{{ asset('build/assets/app-D1D9QzBY.css') }}">
+    <link rel="stylesheet" href="{{ asset('build/assets/app-DERVSjGJ.css') }}">
     <script src="{{ asset('build/assets/app-qZAqPJAz.js') }}"></script>
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
 

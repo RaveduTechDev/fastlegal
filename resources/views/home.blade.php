@@ -332,18 +332,23 @@
                 </h2>
             </header>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                @foreach ($articleMain as $article)
+                @forelse ($articleMain as $article)
                     <div class="col-span-1 mb-8 md:mb-0">
                         <a href="{{ url('/artikel/detail/' . $article->slug) }}" class="text-black">
                             <div class="card shadow-lg rounded-lg overflow-hidden">
-                                <img class="w-full h-48 object-cover" src="{{ asset('assets/img/bg-header.jpg') }}"
-                                    alt="{{ $article->title }}" loading="lazy">
+                                @if ($article->getFirstMediaUrl() != null)
+                                    <img class="w-full h-48 object-cover" src="{{ $article->getFirstMediaUrl() }}"
+                                        alt="{{ $article->title }}" loading="lazy">
+                                @else
+                                    <img src="{{ asset('assets/img/blank-image.jpg') }}" alt="{{ $article->title }}">
+                                @endif
+
                                 <div class="p-4">
                                     <h5 class="text-lg font-bold mb-2 font-jakartaEuy">
                                         {{ Str::limit($article->title, 50) }}
                                     </h5>
-                                    <p class="text-gray-500 text-sm mb-4">{{ $article->created_at }}</p>
-                                    <p class="text-gray-700 text-sm mb-4">{{ $article->description }}</p>
+                                    <p class="text-gray-500 text-sm mb-4">{{ $article->created_at->format('j M Y') }}</p>
+                                    <p class="text-gray-700 text-sm mb-4">{{ Str::limit($article->description, 550) }}</p>
                                     <a href="{{ url('/artikel/detail/' . $article->slug) }}"
                                         class="text-danger-300 hover:underline">
                                         Baca lebih lanjut
@@ -352,7 +357,11 @@
                             </div>
                         </a>
                     </div>
-                @endforeach
+                @empty
+                    <h3 class="text-2xl mt-4">
+                        <span class="text-danger-300">*</span> Artikel tidak ada yang ditampilkan
+                    </h3>
+                @endforelse
 
                 <div class="col-span-1 mb-8 md:mb-0">
                     <div>
@@ -366,14 +375,17 @@
                             <div class="border-b-2 border-red-500 mb-4"></div>
                         @endforeach
 
-                        <a href="{{ url('/artikel') }}" class="text-danger-300 group font-bold inline-flex items-center">
-                            Lihat Artikel Lain
-                            <svg class="ml-1 mt-1 w-4 h-4 text-danger-300 group-hover:translate-x-5" fill="currentColor"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path
-                                    d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                            </svg>
-                        </a>
+                        @if ($articleOther->count() > 0)
+                            <a href="{{ url('/artikel') }}"
+                                class="text-danger-300 group font-bold inline-flex items-center">
+                                Lihat Artikel Lain
+                                <svg class="ml-1 mt-1 w-4 h-4 text-danger-300 group-hover:translate-x-5"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path
+                                        d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+                                </svg>
+                            </a>
+                        @endif
                     </div>
                 </div>
             </div>

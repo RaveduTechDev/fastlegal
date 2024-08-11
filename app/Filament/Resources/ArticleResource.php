@@ -59,7 +59,7 @@ class ArticleResource extends Resource
                                 $set('slug', Str::slug($state));
                             }),
                         TextInput::make('slug')->required()
-                            ->label('Slug')
+                            ->label('Link Judul Artikel')
                             ->minLength(1)
                             ->maxLength(255)
                             ->placeholder('slug adalah link untuk judul')
@@ -76,9 +76,9 @@ class ArticleResource extends Resource
                             ->placeholder('Konten Artikel')
                             ->columnSpanFull()
                             ->disk('public')
+                            ->required()
                             ->output(TiptapOutput::Html)
                             ->directory('articles/attachments'),
-
                     ])->columnSpan(2)->columns(2),
 
                 Section::make('Informasi Tambahan')

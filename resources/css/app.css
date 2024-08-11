@@ -66,7 +66,7 @@
     }
 
     .content-article ul {
-        @apply list-disc ml-4;
+        @apply list-disc ml-5;
     }
 
     .content-article ol {
@@ -79,6 +79,10 @@
 
     .content-article blockquote p {
         @apply mt-0;
+    }
+
+    .content-article a[data-as-button-theme="primary"] {
+        @apply p-3 text-white bg-danger-300 hover:bg-danger-500 rounded-md mt-4 inline-block text-sm md:text-base transition;
     }
 
     .content-article summary {

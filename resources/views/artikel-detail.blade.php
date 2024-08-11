@@ -8,11 +8,15 @@
                     <article class="mx-auto md:px-6">
                         <h1 class=" text-2xl md:text-4xl font-bold mb-4">{{ $article->title }}</h1>
 
-                        <div class="flex items-center mb-8 text-xs md:text-base">
+                        <div class="block xs:flex xs:items-center mb-8 text-xs md:text-base">
                             <a href="{{ url('/artikel?author=' . $article->user->username) }}"
                                 class="inline-flex items-center mr-4 hover:text-danger-300">
                                 @if ($article->user->profile_photo_path == null || $article->user->profile_photo_path == '')
                                     <img src="{{ $article->user->defaultProfilePhotoUrl() }}" alt="{{ $article->user->name }}"
+                                        class="rounded-full h-6 w-6 md:h-8 md:w-8 object-cover mr-2">
+                                @else
+                                    <img src="{{ asset('storage/' . $article->user->profile_photo_path) }}"
+                                        alt="{{ $article->user->name }}"
                                         class="rounded-full h-6 w-6 md:h-8 md:w-8 object-cover mr-2">
                                 @endif
                                 <span> {{ $article->user->name }}</span>
@@ -56,8 +60,11 @@
 
                         <p class="mt-6">{{ $article->description }}</p>
 
-                        <section class="my-10 prose content-article">{!! tiptap_converter()->asHtml($article->content, maxDepth: 3) !!}</section>
-
+                        @if ($article->content === null || $article->content === '')
+                            <section class="my-10 prose content-article"></section>
+                        @else
+                            <section class="my-10 prose content-article">{!! tiptap_converter()->asHtml($article->content, maxDepth: 3) !!}</section>
+                        @endif
 
                         <div class="">
                             {{-- {{ $paginationDetailArticle->links('vendor.pagination.tailwind') }} --}}
