@@ -857,9 +857,9 @@
         <section class="max-w-screen-xl mx-auto p-6 mb-10 gallery">
             <div class="gallery-body">
                 <div id="gallery-content" class="grid grid-cols-3 gap-4">
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230711-WA0041.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.08 (1).jpeg') }}"
                         class="gallery-item overflow-hidden relative w-full h-100 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230711-WA0041.jpg') }}"
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.08 (1).jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 1" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -876,9 +876,9 @@
 
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230714-WA0044.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.08.jpeg') }}"
                         class="gallery-item overflow-hidden relative w-full h-100 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230714-WA0044.jpg') }}"
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.08.jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 2" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -893,9 +893,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230725-WA0038.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.09 (1).jpeg') }}"
                         class="gallery-item overflow-hidden relative w-full h-100 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230725-WA0038.jpg') }}"
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.09 (1).jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 3" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -910,9 +910,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230801-WA0049.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.09 (2).jpeg') }}"
                         class="gallery-item overflow-hidden relative w-full h-100 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230801-WA0049.jpg') }}"
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.09 (2).jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 4" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -927,9 +927,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230803-WA0020.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.09.jpeg') }}"
                         class="gallery-item overflow-hidden relative w-full h-100 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230803-WA0020.jpg') }}"
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.09.jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 5" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -944,9 +944,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230807-WA0053.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.10 (1).jpeg') }}"
                         class="gallery-item overflow-hidden relative w-full h-100 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230807-WA0053.jpg') }}"
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.10 (1).jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 6" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -961,9 +961,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230809-WA0048.jpg') }}"
-                        class="gallery-item overflow-hidden relative w-full h-32 sm:h-40 md:h-80 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230809-WA0048.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.10 (2).jpeg') }}"
+                        class="gallery-item overflow-hidden relative w-full h-100 group">
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.10 (2).jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 7" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -978,9 +978,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230811-WA0061.jpg') }}"
-                        class="gallery-item overflow-hidden relative w-full h-32 sm:h-40 md:h-80 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230811-WA0061.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.10.jpeg') }}"
+                        class="gallery-item overflow-hidden relative w-full h-100 group">
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.10.jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 8" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -995,9 +995,9 @@
                             </div>
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230829-WA0020.jpg') }}"
-                        class="gallery-item overflow-hidden relative w-full h-32 sm:h-40 md:h-80 group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230829-WA0020.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.11 (1).jpeg') }}"
+                        class="gallery-item overflow-hidden relative w-full h-100 group">
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.11 (1).jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 9" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -1012,10 +1012,10 @@
                             </div>
                         </div>
                     </a>
-                    <!-- Hidden Images -->
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20230930-WA0048.jpg') }}"
+                    {{-- Hidden Images  --}}
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.11.jpeg') }}"
                         class="gallery-item overflow-hidden relative w-full h-100 hidden group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20230930-WA0048.jpg') }}"
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.11.jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 10" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
@@ -1030,9 +1030,43 @@
                             </div>
                         </div>
                     </a>
-                    <a href="{{ asset('assets/img/dokumentasi/IMG-20231221-WA0054.jpg') }}"
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.12 (1).jpeg') }}"
                         class="gallery-item overflow-hidden relative w-full h-100 hidden group">
-                        <img src="{{ asset('assets/img/dokumentasi/IMG-20231221-WA0054.jpg') }}"
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.12 (1).jpeg') }}"
+                            class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 11" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <div
+                                class="text-white p-2 flex transform translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
+                                <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                        d="m21 21-3.5-3.5M10 7v6m-3-3h6m4 0a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                                </svg>
+                                <span class="ml-2">ZOOM</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.12 (2).jpeg') }}"
+                        class="gallery-item overflow-hidden relative w-full h-100 hidden group">
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.12 (2).jpeg') }}"
+                            class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 11" />
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <div
+                                class="text-white p-2 flex transform translate-y-4 transition-transform duration-300 group-hover:translate-y-0">
+                                <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                        d="m21 21-3.5-3.5M10 7v6m-3-3h6m4 0a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                                </svg>
+                                <span class="ml-2">ZOOM</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.12.jpeg') }}"
+                        class="gallery-item overflow-hidden relative w-full h-100 hidden group">
+                        <img src="{{ asset('assets/img/dokumentasi/WhatsApp Image 2024-08-12 at 13.34.12.jpeg') }}"
                             class="gallery-img w-full h-full object-cover" loading="lazy" alt="Image 11" />
                         <div
                             class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
