@@ -49,7 +49,7 @@ class ArticleController extends Controller
             ->get();
 
         return view('artikel', [
-            'title' => 'Fastlegal Indonesia - Artikel',
+            'title' => 'Fast Legal Indonesia - Artikel',
             'sub_title' => $sub_title,
             'articles' => $articles,
             'articleOther' => $articleOther,
@@ -70,7 +70,7 @@ class ArticleController extends Controller
 
 
         return view('artikel-detail', [
-            'title' => "Fastlegal Indonesia - $article->title",
+            'title' => "Fast Legal Indonesia - $article->title",
             'article' => $article,
             'articleOther' => $articleOther,
             'paginationDetailArticle' => $paginationDetailArticle

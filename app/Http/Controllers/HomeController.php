@@ -20,11 +20,9 @@ class HomeController extends Controller
             ->get();
 
         return view('home', [
-            'title' => 'Fastlegal Indonesia - Layanan Pengurusan Legalitas Perusahaan dan Perorangan',
+            'title' => 'Fast Legal Indonesia - Layanan Pengurusan Legalitas Perusahaan dan Perorangan',
             'articleMain' => $articleMain,
             'articleOther' => $articleOther
         ]);
     }
-
-    
 }
