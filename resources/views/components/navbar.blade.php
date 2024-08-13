@@ -94,6 +94,17 @@
                         </x-slot>
                     </x-dropdown>
                 </div>
+
+                @if (Auth::user()->role !== 'admin')
+                    <ul>
+                        <li>
+                            <a href="{{ url('/hubungi-kami') }}"
+                                class="ml-[10px] block px-4 py-2 rounded-md border-2 border-danger-300 hover:border-danger-700 bg-danger-300 hover:bg-danger-700 text-white transition ease-in">
+                                HUBUNGI KAMI
+                            </a>
+                        </li>
+                    </ul>
+                @endif
             @endauth
 
             @guest
