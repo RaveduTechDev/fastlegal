@@ -93,8 +93,7 @@ Route::middleware([
 
 
 // symlink
-Route::get('/storage-link', function ($any) {
-    $targetFolder = base_path() . '/storage/app/public';
-    $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
-    symlink($targetFolder, $linkFolder);
+Route::get('/generate', function () {
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+    echo 'ok';
 });
