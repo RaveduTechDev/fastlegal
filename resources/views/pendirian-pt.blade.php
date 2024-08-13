@@ -10,7 +10,8 @@
                         PAKET PENDIRIAN PT
                     </h1>
                     <p class="text-base md:text-lg mb-8 md:w-2/3 mx-auto">
-                        Deskripsi
+                        Untuk Anda yang ingin melindungi aset pribadi Anda, ingin membuka pintu menuju peluang yang
+                        lebih besar, dan perlindungan hukum yang lebih kuat, Mendirikan PT adalah langkah yang tepat!
                     </p>
                     <a href="#show-paket"
                         class="bg-white hover:text-danger-500 text-danger-300 transition font-bold py-2 px-6 rounded-full w-max">

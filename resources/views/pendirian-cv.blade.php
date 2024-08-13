@@ -10,7 +10,8 @@
                         PAKET PENDIRIAN CV
                     </h1>
                     <p class="text-base md:text-lg mb-8 md:w-2/3 mx-auto">
-                        Deskripsi
+                        Untuk anda yang ingin mendirikan Badan Usaha tapi ingin administrasi yang sederhana Mendirikan
+                        CV adalah langkah yang tepat!
                     </p>
                     <a href="#show-paket"
                         class="bg-white hover:text-danger-500 text-danger-300 transition font-bold py-2 px-6 rounded-full w-max">
