@@ -90,3 +90,11 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
+// symlink
+Route::get('/storage-link', function ($any) {
+    $targetFolder = base_path() . '/storage/app/public';
+    $linkFolder = $_SERVER['DOCUMENT_ROOT'] . '/storage';
+    symlink($targetFolder, $linkFolder);
+});

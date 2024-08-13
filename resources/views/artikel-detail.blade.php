@@ -53,7 +53,7 @@
                             @if ($article->getFirstMediaUrl() != null)
                                 <img src="{{ $article->getFirstMediaUrl() }}" alt="{{ $article->title }}" class="w-full">
                             @else
-                                <img src="{{ asset('assets/img/bg-header.jpg') }}" alt="{{ $article->title }}">
+                                <img src="{{ asset('assets/img/blank-image.jpg') }}" alt="{{ $article->title }}">
                             @endif
                             {{-- <figcaption>Digital art by Anonymous</figcaption> --}}
                         </figure>
