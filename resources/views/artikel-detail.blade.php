@@ -66,6 +66,96 @@
                             <section class="my-10 prose content-article">{!! tiptap_converter()->asHtml($article->content, maxDepth: 3) !!}</section>
                         @endif
 
+                        {{-- share link article --}}
+
+                        <button type="button" data-modal-target="course-modal" data-modal-toggle="course-modal"
+                            class="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+                            <svg class="w-4 h-4 me-2 text-danger-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.5 3A3.5 3.5 0 0 0 14 7L8.1 9.8A3.5 3.5 0 0 0 2 12a3.5 3.5 0 0 0 6.1 2.3l6 2.7-.1.5a3.5 3.5 0 1 0 1-2.3l-6-2.7a3.5 3.5 0 0 0 0-1L15 9a3.5 3.5 0 0 0 6-2.4c0-2-1.6-3.5-3.5-3.5Z" />
+                            </svg>
+                            Bagikan Artikel
+                        </button>
+
+                        <!-- Main modal -->
+                        <div id="course-modal" tabindex="-1" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-lg max-h-full">
+                                <div class="relative bg-white rounded-lg shadow dark:bg-gray-800">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5">
+                                        <h3 class="text-lg text-gray-500 dark:text-gray-400">
+                                            Bagikan Artikel Ini
+                                        </h3>
+                                        <button type="button"
+                                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-700 dark:hover:text-white"
+                                            data-modal-toggle="course-modal">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                                fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="px-4 pb-4 md:px-5 md:pb-5">
+                                        <label for="course-url"
+                                            class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">
+                                            klik icon
+                                            "
+                                            <span id="default-icon-course-url">
+                                                <svg class="w-3.5 h-3.5 inline-block" aria-hidden="true"
+                                                    xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                    viewBox="0 0 18 20">
+                                                    <path
+                                                        d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
+                                                </svg>
+                                            </span>
+                                            "
+                                            untuk menyalin tautan artikel di bawah ini:
+                                        </label>
+                                        <div class="relative mb-4">
+                                            <input id="course-url" type="text"
+                                                class="col-span-6 bg-gray-50 border border-gray-300 text-gray-500 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                value="{{ url('https://fastlegal.id/artikel/detail/' . $article->slug) }}"
+                                                disabled readonly>
+                                            <button id="copy-button" data-tooltip-target="tooltip-course-url"
+                                                class="absolute end-2 top-1/2 -translate-y-1/2 bg-gray-50 text-gray-500  hover:bg-gray-300 rounded-lg p-2 inline-flex items-center justify-center">
+                                                <span id="default-icon-course-url">
+                                                    <svg class="w-3.5 h-3.5" aria-hidden="true"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                                        viewBox="0 0 18 20">
+                                                        <path
+                                                            d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
+                                                    </svg>
+                                                </span>
+                                                <span id="success-icon-course-url" class="hidden items-center">
+                                                    <svg class="w-3.5 h-3.5 text-green-700" aria-hidden="true"
+                                                        xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                        viewBox="0 0 16 12">
+                                                        <path stroke="currentColor" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="2"
+                                                            d="M1 5.917 5.724 10.5 15 1.5" />
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                            <div id="tooltip-course-url" role="tooltip"
+                                                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                                                <span id="default-tooltip-message-course-url">Copy to clipboard</span>
+                                                <span id="success-tooltip-message-course-url"
+                                                    class="hidden">Copied!</span>
+                                                <div class="tooltip-arrow" data-popper-arrow></div>
+                                            </div>
+                                        </div>
+                                        <button type="button" data-modal-hide="course-modal"
+                                            class="py-2.5 px-5 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-danger-700 focus:z-10 focus:ring-4 focus:ring-gray-200">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="">
                             {{-- {{ $paginationDetailArticle->links('vendor.pagination.tailwind') }} --}}
                         </div>
@@ -172,7 +262,8 @@
                                     <a href="#" class="inline-block mr-3">
                                         <div class="w-20 h-20 bg-cover bg-center">
                                             @if ($article->getFirstMediaUrl() != null)
-                                                <img src="{{ $article->getFirstMediaUrl() }}" alt="{{ $article->title }}">
+                                                <img src="{{ $article->getFirstMediaUrl() }}"
+                                                    alt="{{ $article->title }}">
                                             @else
                                                 <img src="{{ asset('assets/img/blank-image.jpg') }}"
                                                     alt="{{ $article->title }}">
@@ -186,16 +277,16 @@
                                         </a>
                                         <div class="text-xs md:text-sm text-gray-500">
                                             <span class="mr-2 inline-flex items-center">
-                                                <svg class="w-3 h-3 " fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 512 512">
+                                                <svg class="w-3 h-3 " fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path
                                                         d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
                                                 </svg>
                                                 <span class="ml-1">{{ $article->created_at->format('j M Y') }}</span>
                                             </span>
                                             <span class="hidden items-center group lg:inline-flex">
-                                                <svg class="w-3 h-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 640 512">
+                                                <svg class="w-3 h-3" fill="currentColor"
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
                                                     <path
                                                         d="M88.2 309.1c9.8-18.3 6.8-40.8-7.5-55.8C59.4 230.9 48 204 48 176c0-63.5 63.8-128 160-128s160 64.5 160 128s-63.8 128-160 128c-13.1 0-25.8-1.3-37.8-3.6c-10.4-2-21.2-.6-30.7 4.2c-4.1 2.1-8.3 4.1-12.6 6c-16 7.2-32.9 13.5-49.9 18c2.8-4.6 5.4-9.1 7.9-13.6c1.1-1.9 2.2-3.9 3.2-5.9zM208 352c114.9 0 208-78.8 208-176S322.9 0 208 0S0 78.8 0 176c0 41.8 17.2 80.1 45.9 110.3c-.9 1.7-1.9 3.5-2.8 5.1c-10.3 18.4-22.3 36.5-36.6 52.1c-6.6 7-8.3 17.2-4.6 25.9C5.8 378.3 14.4 384 24 384c43 0 86.5-13.3 122.7-29.7c4.8-2.2 9.6-4.5 14.2-6.8c15.1 3 30.9 4.5 47.1 4.5zM432 480c16.2 0 31.9-1.6 47.1-4.5c4.6 2.3 9.4 4.6 14.2 6.8C529.5 498.7 573 512 616 512c9.6 0 18.2-5.7 22-14.5c3.8-8.8 2-19-4.6-25.9c-14.2-15.6-26.2-33.7-36.6-52.1c-.9-1.7-1.9-3.4-2.8-5.1C622.8 384.1 640 345.8 640 304c0-94.4-87.9-171.5-198.2-175.8c4.1 15.2 6.2 31.2 6.2 47.8l0 .6c87.2 6.7 144 67.5 144 127.4c0 28-11.4 54.9-32.7 77.2c-14.3 15-17.3 37.6-7.5 55.8c1.1 2 2.2 4 3.2 5.9c2.5 4.5 5.2 9 7.9 13.6c-17-4.5-33.9-10.7-49.9-18c-4.3-1.9-8.5-3.9-12.6-6c-9.5-4.8-20.3-6.2-30.7-4.2c-12.1 2.4-24.8 3.6-37.8 3.6c-61.7 0-110-26.5-136.8-62.3c-16 5.4-32.8 9.4-50 11.8C279 439.8 350 480 432 480z" />
                                                 </svg>

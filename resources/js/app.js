@@ -128,6 +128,60 @@ document.addEventListener("DOMContentLoaded", function () {
     document.addEventListener("scroll", function () {
         navigation.classList.toggle("shadow-custom3", window.scrollY > 0);
     });
+
+    // copy link
+    document
+        .getElementById("copy-button")
+        .addEventListener("click", function () {
+            const courseUrlInput = document.getElementById("course-url");
+            const textToCopy = courseUrlInput.value;
+
+            // Membuat elemen textarea sementara
+            const tempTextArea = document.createElement("textarea");
+            tempTextArea.value = textToCopy;
+            document.body.appendChild(tempTextArea);
+
+            // Menyalin teks dari textarea sementara
+            tempTextArea.select();
+            try {
+                document.execCommand("copy");
+
+                // Ubah ikon dan pesan tooltip setelah berhasil menyalin
+                document
+                    .getElementById("default-icon-course-url")
+                    .classList.add("hidden");
+                document
+                    .getElementById("success-icon-course-url")
+                    .classList.remove("hidden");
+                document
+                    .getElementById("default-tooltip-message-course-url")
+                    .classList.add("hidden");
+                document
+                    .getElementById("success-tooltip-message-course-url")
+                    .classList.remove("hidden");
+
+                // Kembalikan ke keadaan awal setelah 2 detik
+                setTimeout(function () {
+                    document
+                        .getElementById("default-icon-course-url")
+                        .classList.remove("hidden");
+                    document
+                        .getElementById("success-icon-course-url")
+                        .classList.add("hidden");
+                    document
+                        .getElementById("default-tooltip-message-course-url")
+                        .classList.remove("hidden");
+                    document
+                        .getElementById("success-tooltip-message-course-url")
+                        .classList.add("hidden");
+                }, 2000);
+            } catch (err) {
+                console.error("Failed to copy: ", err);
+            }
+
+            // Menghapus elemen textarea sementara
+            document.body.removeChild(tempTextArea);
+        });
 });
 
 $(document).ready(function () {
