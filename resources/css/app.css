@@ -85,6 +85,18 @@
         @apply p-3 text-white bg-danger-300 hover:bg-danger-500 rounded-md mt-4 inline-block text-sm md:text-base transition;
     }
 
+    .content-article a[data-as-button-theme="secondary"] {
+        @apply p-3 text-white bg-[#bb8821] hover:bg-[#78591b] rounded-md mt-4 inline-block text-sm md:text-base transition;
+    }
+
+    .content-article a[data-as-button-theme="tertiary"] {
+        @apply p-3 text-white bg-[#18b98b] hover:bg-[#218568] rounded-md mt-4 inline-block text-sm md:text-base transition;
+    }
+
+    .content-article a[data-as-button-theme="accent"] {
+        @apply p-3 text-white bg-danger-300 hover:bg-danger-500 rounded-md mt-4 inline-block text-sm md:text-base transition;
+    }
+
     .content-article summary {
         @apply flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3;
     }

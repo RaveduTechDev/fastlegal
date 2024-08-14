@@ -35,8 +35,9 @@ class AdminPanelProvider extends PanelProvider
             ->favicon(asset('assets/img/FL.png'))
             ->colors([
                 'primary' => "#ff204e",
-                'success' => "#00bfa5",
-                'warning' => "#f57c00",
+                'secondary' => "#455a64",
+                'tertiary' => "#f9f9f9",
+                'accent' => Color::hex('#ff204e'),
             ])
             ->renderHook(
                 PanelsRenderHook::USER_MENU_BEFORE,

@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="item px-2">
-                    <a href="{{ url('/fastkontruksi') }}"
+                    <a href="{{ url('/fastkonstruksi') }}"
                         class=" flex items-center p-3 transition rounded-lg bg-white shadow-custom2">
                         <svg class=" w-9 text-danger-300" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512">
@@ -268,7 +268,7 @@
                             cepat, dan biaya terjangkau. Izin resmi dari LSBU yang terdaftar di Kementerian PUPR.
                         </p>
                         <a class="text-danger-300 text-bold hover:underline"
-                            href="{{ url('/fastkontruksi') }}">Selengkapnya</a>
+                            href="{{ url('/fastkonstruksi') }}">Selengkapnya</a>
                     </div>
                 </div>
 
