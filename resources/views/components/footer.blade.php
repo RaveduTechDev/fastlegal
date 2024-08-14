@@ -73,8 +73,8 @@
                         <a href="{{ url('/fasthalal') }}" class="hover:underline hover:text-danger-300">FASTHALAL</a>
                     </li>
                     <li>
-                        <a href="{{ url('/fastkontruksi') }}" class="hover:underline hover:text-danger-300">
-                            FASTKONTRUKSI
+                        <a href="{{ url('/fastkonstruksi') }}" class="hover:underline hover:text-danger-300">
+                            FASTKONSTRUKSI
                         </a>
                     </li>
                     <li>
