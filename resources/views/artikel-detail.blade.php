@@ -105,7 +105,7 @@
                                             class="text-sm font-medium text-gray-900 dark:text-white mb-2 block">
                                             klik icon
                                             "
-                                            <span id="default-icon-course-url">
+                                            <span>
                                                 <svg class="w-3.5 h-3.5 inline-block" aria-hidden="true"
                                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                                                     viewBox="0 0 18 20">
