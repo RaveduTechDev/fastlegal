@@ -132,7 +132,7 @@
 
         <div class="mx-auto">
             <hr class="border-gray-700 my-4">
-            <p class="text-center">© Copyright Fast Legal Indonesia support by
+            <p class="text-center">© {{ date('Y') }} Copyright Fast Legal Indonesia support by
                 <a href="" target="_blank" class="text-danger-300 hover:underline">Ravedu Technology</a>
             </p>
         </div>
