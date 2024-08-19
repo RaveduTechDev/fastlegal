@@ -96,7 +96,7 @@
                 </div>
 
                 @if (Auth::user()->role !== 'admin')
-                    <ul>
+                    <ul class="hidden lg:block">
                         <li>
                             <a href="{{ url('/hubungi-kami') }}"
                                 class="ml-[10px] block px-4 py-2 rounded-md border-2 border-danger-300 hover:border-danger-700 bg-danger-300 hover:bg-danger-700 text-white transition ease-in">

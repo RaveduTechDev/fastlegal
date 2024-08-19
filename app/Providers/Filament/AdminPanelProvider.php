@@ -39,10 +39,6 @@ class AdminPanelProvider extends PanelProvider
                 'tertiary' => "#f9f9f9",
                 'accent' => Color::hex('#ff204e'),
             ])
-            ->renderHook(
-                PanelsRenderHook::USER_MENU_BEFORE,
-                fn() => view('components.to-web')
-            )
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
@@ -52,6 +48,10 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 Widgets\AccountWidget::class,
             ])
+            ->renderHook(
+                PanelsRenderHook::USER_MENU_BEFORE,
+                fn() => view('components.to-web')
+            )
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,
