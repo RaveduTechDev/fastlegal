@@ -12,11 +12,7 @@
         <meta property="og:url" content="https://fastlegal.id/artikel/detail/{{ $article->slug }}" />
         <meta name="description" content="{{ $article->description }}" />
         <meta property="og:description" content="{{ $article->description }}" />
-        @if ($article->getFirstMediaUrl() != null)
-            <meta property="og:image" content="{{ $article->getFirstMediaUrl() }}" />
-        @else
-            <meta property="og:image" content="{{ asset('assets/img/FL.png') }}" />
-        @endif
+        <meta property="og:image" content="{{ $imageUrl }}" />
         <meta property="og:type" content="article" />
     @else
         <meta property="og:title" content="{{ $title }}" />

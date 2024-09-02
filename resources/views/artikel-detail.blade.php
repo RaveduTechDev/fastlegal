@@ -1,3 +1,6 @@
+@php
+    $imageUrl = $article->getFirstMediaUrl() ?: asset('assets/img/blank-image.jpg');
+@endphp
 @extends('components.layout')
 
 @section('content')
@@ -50,11 +53,7 @@
                         </div>
 
                         <figure class=" rounded-lg overflow-hidden">
-                            @if ($article->getFirstMediaUrl() != null)
-                                <img src="{{ $article->getFirstMediaUrl() }}" alt="{{ $article->title }}" class="w-full">
-                            @else
-                                <img src="{{ asset('assets/img/blank-image.jpg') }}" alt="{{ $article->title }}">
-                            @endif
+                            <img src="{{ $imageUrl }}" alt="{{ $article->title }}" class="w-full">
                             {{-- <figcaption>Digital art by Anonymous</figcaption> --}}
                         </figure>
 
