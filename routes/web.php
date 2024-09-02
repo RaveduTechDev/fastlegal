@@ -6,36 +6,51 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
+
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
 Route::get('/tentang-kami', function () {
     return view('tentang-kami', ['title' => 'Fast Legal Indonesia - Tentang Kami']);
 });
+
 Route::get('/pendirian-perusahaan', function () {
     return view('pendirian-perusahaan', ['title' => 'Fast Legal Indonesia - Pendirian Perusahaan']);
 });
+
 Route::get('/pendirian-pt', function () {
     return view('pendirian-pt', ['title' => 'Fast Legal Indonesia - Pendirian PT']);
 });
+
 Route::get('/pendirian-cv', function () {
     return view('pendirian-cv', ['title' => 'Fast Legal Indonesia - Pendirian CV']);
 });
+
 Route::get('/pendirian-firma', function () {
     return view('pendirian-firma', ['title' => 'Fast Legal Indonesia - Pendirian Firma']);
 });
+
 Route::get('/pendirian-koperasi', function () {
     return view('pendirian-koperasi', ['title' => 'Fast Legal Indonesia - Pendirian Koperasi']);
 });
+
 Route::get('/pendirian-yayasan', function () {
     return view('pendirian-yayasan', ['title' => 'Fast Legal Indonesia - Pendirian Yayasan']);
 });
+
 Route::get('/pendirian-perkumpulan', function () {
     return view('pendirian-perkumpulan', ['title' => 'Fast Legal Indonesia - Pendirian Perkumpulan']);
 });
+
 Route::get('/pendirian-persekutuan-perdata', function () {
     return view('pendirian-persekutuan-perdata', ['title' => 'Fast Legal Indonesia - Pendirian Persekutuan Perdata']);
 });
+
 Route::get('/fasthalal', function () {
     return view('fasthalal', ['title' => 'Fast Legal Indonesia - Fasthalal']);
 });
+
 Route::get('/fastkonstruksi', function () {
     return view('fastkontruksi', ['title' => 'Fast Legal Indonesia - Fastkontruksi']);
 });
@@ -75,3 +90,5 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+
