@@ -1,5 +1,8 @@
 @php
     $imageUrl = $article->getFirstMediaUrl() ?: asset('assets/img/blank-image.jpg');
+    $ogTitle = $article->title;
+    $ogSlug = $article->slug;
+    $metaDesc = $article->description;
 @endphp
 @extends('components.layout')
 
@@ -9,7 +12,7 @@
             <div class="w-full md:w-2/3 lg:w-3/4">
                 <div class="pt-8 pb-16 lg:pt-16 lg:pb-24">
                     <article class="mx-auto md:px-6">
-                        <h1 class=" text-2xl md:text-4xl font-bold mb-4">{{ $article->title }}</h1>
+                        <h1 class=" text-2xl md:text-4xl font-bold mb-4">{{ $ogTitle }}</h1>
 
                         <div class="block xs:flex xs:items-center mb-8 text-xs md:text-base">
                             <a href="{{ url('/artikel?author=' . $article->user->username) }}"
@@ -53,11 +56,11 @@
                         </div>
 
                         <figure class=" rounded-lg overflow-hidden">
-                            <img src="{{ $imageUrl }}" alt="{{ $article->title }}" class="w-full">
+                            <img src="{{ $imageUrl }}" alt="{{ $ogTitle }}" class="w-full">
                             {{-- <figcaption>Digital art by Anonymous</figcaption> --}}
                         </figure>
 
-                        <p class="mt-6">{{ $article->description }}</p>
+                        <p class="mt-6">{{ $metaDesc }}</p>
 
                         @if ($article->content === null || $article->content === '')
                             <section class="my-10 prose content-article"></section>
@@ -255,24 +258,24 @@
                         <a href="{{ url('/artikel') }}" class="hover:underline">Artikel Lainnya</a>
                     </h4>
                     <ul>
-                        @foreach ($articleOther->shuffle() as $article)
+                        @foreach ($articleOther->shuffle() as $articleRandom)
                             <li class="mb-2">
                                 <div class="flex items-start ">
                                     <a href="#" class="inline-block mr-3">
                                         <div class="w-20 h-20 bg-cover bg-center">
-                                            @if ($article->getFirstMediaUrl() != null)
-                                                <img src="{{ $article->getFirstMediaUrl() }}"
-                                                    alt="{{ $article->title }}">
+                                            @if ($articleRandom->getFirstMediaUrl() != null)
+                                                <img src="{{ $articleRandom->getFirstMediaUrl() }}"
+                                                    alt="{{ $articleRandom->title }}">
                                             @else
                                                 <img src="{{ asset('assets/img/blank-image.jpg') }}"
-                                                    alt="{{ $article->title }}">
+                                                    alt="{{ $articleRandom->title }}">
                                             @endif
                                         </div>
                                     </a>
                                     <div class="text-sm">
-                                        <a href="{{ url('/artikel/detail/' . $article->slug) }}"
+                                        <a href="{{ url('/artikel/detail/' . $articleRandom->slug) }}"
                                             class="text-gray-900 font-medium hover:text-danger-300 leading-none">
-                                            {{ $article->title }}
+                                            {{ $articleRandom->title }}
                                         </a>
                                         <div class="text-xs md:text-sm text-gray-500">
                                             <span class="mr-2 inline-flex items-center">
@@ -281,7 +284,8 @@
                                                     <path
                                                         d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
                                                 </svg>
-                                                <span class="ml-1">{{ $article->created_at->format('j M Y') }}</span>
+                                                <span
+                                                    class="ml-1">{{ $articleRandom->created_at->format('j M Y') }}</span>
                                             </span>
                                             <span class="hidden items-center group lg:inline-flex">
                                                 <svg class="w-3 h-3" fill="currentColor"

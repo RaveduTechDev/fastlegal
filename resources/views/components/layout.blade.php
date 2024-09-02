@@ -8,10 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- SEO to share link --}}
     @if (request()->is('artikel/detail/*'))
-        <meta property="og:title" content="{{ $article->title }}" />
-        <meta property="og:url" content="https://fastlegal.id/artikel/detail/{{ $article->slug }}" />
-        <meta name="description" content="{{ $article->description }}" />
-        <meta property="og:description" content="{{ $article->description }}" />
+        <meta property="og:title" content="{{ $ogTitle }}" />
+        <meta property="og:url" content="https://fastlegal.id/artikel/detail/{{ $ogSlug }}" />
+        <meta name="description" content="{{ $metaDesc }}" />
+        <meta property="og:description" content="{{ $metaDesc }}" />
         <meta property="og:image" content="{{ $imageUrl }}" />
         <meta property="og:type" content="article" />
     @else
