@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     @if (request()->is('artikel/detail/*'))
-        <meta property="og:title" content="{{ $article->title }} }}" />
+        <meta property="og:title" content="{{ $article->title }}" />
         <meta property="og:url" content="https://fastlegal.id/artikel/detail/{{ $article->slug }}" />
         <meta name="description" content="{{ $article->description }}" />
         <meta property="og:description" content="{{ $article->description }}" />
