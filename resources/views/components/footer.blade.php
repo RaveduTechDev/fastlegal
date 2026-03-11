@@ -115,9 +115,7 @@
                     <span class="ml-2"> Phone:</span>
                 </p>
                 <div class="md:-mt-2 md:ml-8">
-                    <p>0822-2528-8269</p>
                     <p>0812-9492-4995</p>
-
                 </div>
             </div>
 
