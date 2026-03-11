@@ -40,7 +40,7 @@
                                 <p class="text-md font-extrabold font-jakartaEuy flex-grow">IDR 1.500.000</p>
                             </div>
 
-                            <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                            <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                 class="bg-danger-300 hover:bg-danger-700 transition text-white p-2 rounded-md">
                                 Pesan Sekarang
                             </a>
@@ -62,7 +62,7 @@
                                 <p class="text-md font-extrabold font-jakartaEuy flex-grow">IDR 2.500.000</p>
                             </div>
 
-                            <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                            <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                 class="bg-danger-300 hover:bg-danger-700 transition text-white p-2 rounded-md">
                                 Pesan Sekarang
                             </a>
@@ -84,7 +84,7 @@
                                 <p class="text-md font-extrabold font-jakartaEuy flex-grow">IDR 1.000.000</p>
                             </div>
 
-                            <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                            <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                 class="bg-danger-300 hover:bg-danger-700 transition text-white p-2 rounded-md">
                                 Pesan Sekarang
                             </a>

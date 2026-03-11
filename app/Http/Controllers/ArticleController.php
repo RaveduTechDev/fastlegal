@@ -8,7 +8,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
-{
+{ 
     public function index()
     {
         $query = Article::filter(request(['search', 'category']));

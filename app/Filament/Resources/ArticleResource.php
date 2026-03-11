@@ -66,15 +66,20 @@ class ArticleResource extends Resource
                             ->unique(ignoreRecord: true)
                             ->required(),
                         Hidden::make('user_id')->dehydrateStateUsing(fn() => Auth::id()),
-                        Textarea::make('description')->required()
+                        TiptapEditor::make('description')
+                            ->label('Deskripsi')
                             ->placeholder('Deskripsi Singkat Tentang Artikel')
                             ->columnSpanFull()
-                            ->label('Deskripsi'),
+                            ->profile('minimal')
+                            ->required()
+                            ->output(TiptapOutput::Html),
 
                         TiptapEditor::make('content')
                             ->label('Konten')
                             ->placeholder('Konten Artikel')
                             ->columnSpanFull()
+                            ->acceptedFileTypes(['image/png', 'image/jpeg', 'image/jpg'])
+                            ->maxFileSize(1024 * 2)
                             ->disk('public')
                             ->required()
                             ->output(TiptapOutput::Html)
@@ -133,6 +138,7 @@ class ArticleResource extends Resource
                     ->color(function (string $state): string {
                         if ($state == "publish") return "success";
                         if ($state == "draft") return "warning";
+                        return "secondary";
                     }),
             ])
             ->filters([

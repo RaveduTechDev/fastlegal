@@ -28,7 +28,7 @@
                         <tr class="border-y ">
                             <td class="py-2">Sertifikasi Halal Makanan dan Minuman</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Obat</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Kosmetik</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Produk Kimiawi</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +98,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Produk Biologi</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Produk Rekayasa Genetik</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +132,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Barang Gunaan</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -149,7 +149,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Jasa Penyembelihan</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +166,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Jasa Pengolahan</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +183,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Jasa Penyimpanan</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +200,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Jasa Pengemasan</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -217,7 +217,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Jasa Pendistribusian</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -234,7 +234,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Jasa Penjualan</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +251,7 @@
                         <tr class="border-y">
                             <td class="py-2">Sertifikasi Halal Jasa Penyajian</td>
                             <td class="py-2 whitespace-nowrap text-right">
-                                <a href="{{ url('https://api.whatsapp.com/send?phone=6282225288269&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
+                                <a href="{{ url('https://api.whatsapp.com/send?phone=6281294924995&text=Halo,%20saya%20ingin%20bertanya%20mengenai%20layanan%20FASTLEGAL') }}"
                                     class="inline-flex items-center px-4 py-2 border border-transparent transition text-xs md:text-sm font-medium rounded-md text-white bg-danger-300 hover:bg-danger-700"
                                     target="_blank">
                                     <svg class="w-6 h-6text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"

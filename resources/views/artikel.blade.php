@@ -90,7 +90,7 @@
                             </div>
                             <div class="hidden sm:block">
                                 <p>
-                                    {!! $article->contentDescription() !!}
+                                    {!! strip_tags($article->contentDescription(), '<b><i><u><strong><p><br>') !!}
                                 </p>
                             </div>
                         </div>
@@ -100,9 +100,9 @@
                 @empty
                     <h3 class="text-2xl mt-4"><span class="text-danger-300">*</span> Artikel tidak ada yang ditampilkan</h3>
                     @if (request('search') || request('category') || request('author'))
-                        <a class="text-danger-300 mt-4 hover:underline " href="{{ url('/artikel') }}">&LeftArrow; Kembali
-                            ke
-                            artikel</a>
+                        <a class="text-danger-300 mt-4 hover:underline " href="{{ url('/artikel') }}">
+                            &LeftArrow; Kembali ke artikel
+                        </a>
                     @endif
                 @endforelse
                 <nav class="mt-8 lg:mr-4" aria-label="Article">
