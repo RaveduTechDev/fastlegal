@@ -89,9 +89,9 @@
                                 </div>
                             </div>
                             <div class="hidden sm:block">
-                                <p>
-                                    {!! strip_tags($article->contentDescription(), '<b><i><u><strong><p><br>') !!}
-                                </p>
+                                <div class="content-article prose prose-sm max-w-none text-gray-700">
+                                    {!! $article->contentDescription() !!}
+                                </div>
                             </div>
                         </div>
                     </article>

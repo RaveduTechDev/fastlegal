@@ -348,7 +348,9 @@
                                         {{ Str::limit($article->title, 50) }}
                                     </h5>
                                     <p class="text-gray-500 text-sm mb-4">{{ $article->created_at->format('j M Y') }}</p>
-                                    <p class="text-gray-700 text-sm mb-4">{{ Str::limit($article->description, 550) }}</p>
+                                    <div class="content-article prose prose-sm max-w-none text-gray-700 mb-4">
+                                        {!! $article->renderedDescription() !!}
+                                    </div>
                                     <a href="{{ url('/artikel/detail/' . $article->slug) }}"
                                         class="text-danger-300 hover:underline">
                                         Baca lebih lanjut

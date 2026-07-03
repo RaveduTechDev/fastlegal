@@ -12,14 +12,25 @@
     "src": "public/assets/img/bg-header3.jpg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CIh0_COA.css",
+    "file": "assets/app-C6yo_0wT.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
+  "resources/css/filament/admin/theme.css": {
+    "file": "assets/theme-DZM55-Qt.css",
+    "src": "resources/css/filament/admin/theme.css",
+    "isEntry": true
+  },
   "resources/js/app.js": {
-    "file": "assets/app-Cn2M40rO.js",
+    "file": "assets/app-DXinH48b.js",
     "name": "app",
     "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/filament/tiptap-extensions.js": {
+    "file": "assets/tiptap-extensions-D6xSIU4W.js",
+    "name": "tiptap-extensions",
+    "src": "resources/js/filament/tiptap-extensions.js",
     "isEntry": true
   }
 }

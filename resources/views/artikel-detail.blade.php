@@ -2,7 +2,7 @@
     $imageUrl = $article->getFirstMediaUrl() ?: asset('assets/img/blank-image.jpg');
     $ogTitle = $article->title;
     $ogSlug = $article->slug;
-    $metaDesc = $article->description;
+    $metaDesc = $article->metaDescription();
 @endphp
 @extends('components.layout')
 
@@ -60,12 +60,14 @@
                             {{-- <figcaption>Digital art by Anonymous</figcaption> --}}
                         </figure>
 
-                        <p class="mt-6">{{ $metaDesc }}</p>
+                        <div class="mt-6 prose content-article max-w-none text-gray-700">
+                            {!! $article->renderedDescription() !!}
+                        </div>
 
                         @if ($article->content === null || $article->content === '')
                             <section class="my-10 prose content-article"></section>
                         @else
-                            <section class="my-10 prose content-article">{!! tiptap_converter()->asHtml($article->content, maxDepth: 3) !!}</section>
+                            <section class="my-10 prose content-article">{!! $article->renderedContent() !!}</section>
                         @endif
 
                         {{-- share link article --}}

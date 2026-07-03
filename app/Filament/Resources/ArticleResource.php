@@ -71,6 +71,8 @@ class ArticleResource extends Resource
                             ->placeholder('Deskripsi Singkat Tentang Artikel')
                             ->columnSpanFull()
                             ->profile('minimal')
+                            ->disableBubbleMenus()
+                            ->disableFloatingMenus()
                             ->required()
                             ->output(TiptapOutput::Html),
 

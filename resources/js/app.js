@@ -7,58 +7,67 @@ Alpine.start();
 
 document.addEventListener("DOMContentLoaded", function () {
     const dropdownButton = document.getElementById(
-        "mega-menu-full-dropdown-button"
+        "mega-menu-full-dropdown-button",
     );
     const dropdownMenu = document.getElementById("mega-menu-full-dropdown");
     const iconV1 = document.getElementById("icon-megamenu-dropdown");
     const navigation = document.getElementById("navigation");
     const body = document.body;
 
-    dropdownButton.addEventListener("click", function () {
-        if (dropdownMenu.classList.contains("lg:hidden")) {
-            dropdownMenu.classList.remove("lg:hidden", "animate-slideUp");
-            dropdownMenu.classList.add("lg:block", "animate-slideDown");
-            navigation.classList.add("shadow-lg", "shadow-gray-400/40");
-            dropdownButton.classList.add("active");
-            body.classList.add("overflow-y-hidden");
-            iconV1.classList.add("-rotate-180", "transition");
-        } else {
-            dropdownMenu.classList.remove("block", "animate-slideDown");
-            dropdownMenu.classList.add("animate-slideUp");
-            dropdownButton.classList.remove("active");
-            navigation.classList.remove("shadow-lg", "shadow-gray-400/40");
-            body.classList.remove("overflow-y-hidden");
-            iconV1.classList.remove("-rotate-180", "transition");
+    if (dropdownButton && dropdownMenu && iconV1 && navigation) {
+        dropdownButton.addEventListener("click", function () {
+            if (dropdownMenu.classList.contains("lg:hidden")) {
+                dropdownMenu.classList.remove("lg:hidden", "animate-slideUp");
+                dropdownMenu.classList.add("lg:block", "animate-slideDown");
+                navigation.classList.add("shadow-lg", "shadow-gray-400/40");
+                dropdownButton.classList.add("active");
+                body.classList.add("overflow-y-hidden");
+                iconV1.classList.add("-rotate-180", "transition");
+            } else {
+                dropdownMenu.classList.remove("block", "animate-slideDown");
+                dropdownMenu.classList.add("animate-slideUp");
+                dropdownButton.classList.remove("active");
+                navigation.classList.remove("shadow-lg", "shadow-gray-400/40");
+                body.classList.remove("overflow-y-hidden");
+                iconV1.classList.remove("-rotate-180", "transition");
 
-            dropdownMenu.addEventListener(
-                "animationend",
-                function () {
-                    if (dropdownMenu.classList.contains("animate-slideUp")) {
-                        dropdownMenu.classList.remove("animate-slideUp");
-                        dropdownMenu.classList.add("lg:hidden");
-                    }
-                },
-                { once: true }
-            );
-        }
-    });
+                dropdownMenu.addEventListener(
+                    "animationend",
+                    function () {
+                        if (
+                            dropdownMenu.classList.contains("animate-slideUp")
+                        ) {
+                            dropdownMenu.classList.remove("animate-slideUp");
+                            dropdownMenu.classList.add("lg:hidden");
+                        }
+                    },
+                    { once: true },
+                );
+            }
+        });
+    }
 
     const btnLayananMobile = document.getElementById("btn-layanan-mobile");
     const dropdownLayananMobile = document.getElementById(
-        "dropdown-layanan-mobile"
+        "dropdown-layanan-mobile",
     );
 
-    btnLayananMobile.addEventListener("click", function () {
-        if (dropdownLayananMobile.classList.contains("hidden")) {
-            dropdownLayananMobile.classList.remove("hidden");
-            dropdownLayananMobile.classList.add("block");
-            btnLayananMobile.classList.add("bg-gray-200", "text-gray-900");
-        } else {
-            dropdownLayananMobile.classList.remove("block");
-            dropdownLayananMobile.classList.add("hidden");
-            btnLayananMobile.classList.remove("bg-gray-200", "text-gray-900");
-        }
-    });
+    if (btnLayananMobile && dropdownLayananMobile) {
+        btnLayananMobile.addEventListener("click", function () {
+            if (dropdownLayananMobile.classList.contains("hidden")) {
+                dropdownLayananMobile.classList.remove("hidden");
+                dropdownLayananMobile.classList.add("block");
+                btnLayananMobile.classList.add("bg-gray-200", "text-gray-900");
+            } else {
+                dropdownLayananMobile.classList.remove("block");
+                dropdownLayananMobile.classList.add("hidden");
+                btnLayananMobile.classList.remove(
+                    "bg-gray-200",
+                    "text-gray-900",
+                );
+            }
+        });
+    }
 
     if (location.pathname === "/") {
         const numCounters = [
@@ -79,31 +88,35 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         const numTarget = document.querySelector(".countAbout");
-        numObserver.observe(numTarget);
+        if (numTarget) {
+            numObserver.observe(numTarget);
+        }
 
-        document
-            .getElementById("show-more")
-            .addEventListener("click", function () {
+        const showMoreButton = document.getElementById("show-more");
+        if (showMoreButton) {
+            showMoreButton.addEventListener("click", function () {
                 const hiddenImages = document.querySelectorAll(
-                    ".gallery-item.hidden"
+                    ".gallery-item.hidden",
                 );
                 hiddenImages.forEach((image) => {
                     image.classList.remove("hidden");
                 });
                 this.style.display = "none";
             });
+        }
     } else if (location.pathname === "/partner-client") {
-        document
-            .getElementById("show-more")
-            .addEventListener("click", function () {
+        const showMoreButton = document.getElementById("show-more");
+        if (showMoreButton) {
+            showMoreButton.addEventListener("click", function () {
                 const hiddenImages = document.querySelectorAll(
-                    ".gallery-item.hidden"
+                    ".gallery-item.hidden",
                 );
                 hiddenImages.forEach((image) => {
                     image.classList.remove("hidden");
                 });
                 this.style.display = "none";
             });
+        }
     }
 
     function animateNumCount(id, targetValue) {
@@ -130,10 +143,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // copy link
-    document
-        .getElementById("copy-button")
-        .addEventListener("click", function () {
+    const copyButton = document.getElementById("copy-button");
+    if (copyButton) {
+        copyButton.addEventListener("click", function () {
             const courseUrlInput = document.getElementById("course-url");
+            if (!courseUrlInput) {
+                return;
+            }
             const textToCopy = courseUrlInput.value;
 
             // Membuat elemen textarea sementara
@@ -182,6 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Menghapus elemen textarea sementara
             document.body.removeChild(tempTextArea);
         });
+    }
 });
 
 $(document).ready(function () {
@@ -412,4 +429,7 @@ $(document).ready(function () {
     });
 });
 
-lightGallery(document.querySelector("#gallery-content"));
+const galleryContent = document.querySelector("#gallery-content");
+if (galleryContent) {
+    lightGallery(galleryContent);
+}

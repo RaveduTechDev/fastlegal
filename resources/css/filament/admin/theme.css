@@ -1,0 +1,126 @@
+.tiptap-content {
+    color: rgb(55 65 81);
+    line-height: 1.75;
+}
+
+.tiptap-content img {
+    border-radius: 0.5rem;
+}
+
+.tiptap-content h2 {
+    margin-top: 2.5rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.tiptap-content h3 {
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.tiptap-content h4 {
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.tiptap-content h5 {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.tiptap-content p {
+    margin-top: 0.5rem;
+}
+
+.tiptap-content ul {
+    list-style-type: disc;
+    margin-left: 1.25rem;
+}
+
+.tiptap-content ol {
+    list-style-type: decimal;
+    margin-left: 1rem;
+}
+
+.tiptap-content blockquote {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    border-left: 8px solid #ff204e;
+    background-color: #fee2e2;
+}
+
+.tiptap-content blockquote p {
+    margin-top: 0;
+}
+
+.tiptap-content a[data-as-button-theme="primary"] {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+    background: #ff204e;
+    padding: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tiptap-content a[data-as-button-theme="secondary"] {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+    background: #bb8821;
+    padding: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tiptap-content a[data-as-button-theme="tertiary"] {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+    background: #18b98b;
+    padding: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tiptap-content a[data-as-button-theme="accent"] {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+    background: #ff204e;
+    padding: 0.75rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.tiptap-content summary {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    border-radius: 0.75rem 0.75rem 0 0;
+    border: 1px solid #e5e7eb;
+    border-bottom: 0;
+    padding: 1.25rem;
+    font-weight: 500;
+    color: #6b7280;
+}
+
+.tiptap-content iframe {
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}

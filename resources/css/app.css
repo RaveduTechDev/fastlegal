@@ -41,68 +41,88 @@
         color: #fff;
     }
 
-    .content-article img {
+    .content-article img,
+    .tiptap-content img {
         @apply rounded-lg;
     }
 
-    .content-article h2 {
+    .content-article h2,
+    .tiptap-content h2 {
         @apply text-xl md:text-3xl font-bold font-jakartaEuy mt-10;
     }
 
-    .content-article h3 {
+    .content-article h3,
+    .tiptap-content h3 {
         @apply text-lg md:text-2xl font-bold  font-jakartaEuy mt-8;
     }
 
-    .content-article h4 {
+    .content-article h4,
+    .tiptap-content h4 {
         @apply text-base md:text-xl font-bold  font-jakartaEuy mt-8;
     }
 
-    .content-article h5 {
+    .content-article h5,
+    .tiptap-content h5 {
         @apply text-sm md:text-lg font-bold  font-jakartaEuy mt-6;
     }
 
-    .content-article p {
+    .content-article p,
+    .tiptap-content p {
         @apply mt-2;
     }
 
-    .content-article ul {
+    .content-article ul,
+    .tiptap-content ul {
         @apply list-disc ml-5;
     }
 
-    .content-article ol {
+    .content-article ol,
+    .tiptap-content ol {
         @apply list-decimal ml-4;
     }
 
-    .content-article blockquote {
+    .content-article blockquote,
+    .tiptap-content blockquote {
         @apply p-4 md:py-2 lg:px-12 mt-4 mb-6 rounded-md border-s-8 border-danger-300 bg-red-100;
     }
 
-    .content-article blockquote p {
+    .content-article blockquote p,
+    .tiptap-content blockquote p {
         @apply mt-0;
     }
 
-    .content-article a[data-as-button-theme="primary"] {
+    .content-article a[data-as-button-theme="primary"],
+    .tiptap-content a[data-as-button-theme="primary"] {
         @apply p-3 text-white bg-danger-300 hover:bg-danger-500 rounded-md mt-4 inline-block text-sm md:text-base transition;
     }
 
-    .content-article a[data-as-button-theme="secondary"] {
+    .content-article a[data-as-button-theme="secondary"],
+    .tiptap-content a[data-as-button-theme="secondary"] {
         @apply p-3 text-white bg-[#bb8821] hover:bg-[#78591b] rounded-md mt-4 inline-block text-sm md:text-base transition;
     }
 
-    .content-article a[data-as-button-theme="tertiary"] {
+    .content-article a[data-as-button-theme="tertiary"],
+    .tiptap-content a[data-as-button-theme="tertiary"] {
         @apply p-3 text-white bg-[#18b98b] hover:bg-[#218568] rounded-md mt-4 inline-block text-sm md:text-base transition;
     }
 
-    .content-article a[data-as-button-theme="accent"] {
+    .content-article a[data-as-button-theme="accent"],
+    .tiptap-content a[data-as-button-theme="accent"] {
         @apply p-3 text-white bg-danger-300 hover:bg-danger-500 rounded-md mt-4 inline-block text-sm md:text-base transition;
     }
 
-    .content-article summary {
+    .content-article summary,
+    .tiptap-content summary {
         @apply flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3;
     }
 
-    .content-article iframe {
+    .content-article iframe,
+    .tiptap-content iframe {
         @apply rounded-lg mt-4;
+    }
+
+    .tiptap-content {
+        @apply text-gray-700 leading-7;
     }
 
     .butto .danger-300 {

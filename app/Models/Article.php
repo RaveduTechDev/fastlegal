@@ -79,8 +79,21 @@ class Article extends Model implements HasMedia
 
     public function contentDescription()
     {
-        $url = htmlspecialchars("/artikel/detail/" . $this->slug);
-        $href = "<a class='hover:text-danger-300 hover:underline' href='{$url}'>[...]</a>";
-        return Str::words($this->description, 18, $href);
+        return $this->description ?? '';
+    }
+
+    public function metaDescription(int $limit = 160): string
+    {
+        return Str::limit(Str::squish(strip_tags($this->description ?? '')), $limit);
+    }
+
+    public function renderedDescription(): string
+    {
+        return $this->description ?? '';
+    }
+
+    public function renderedContent(): string
+    {
+        return tiptap_converter()->asHtml($this->content ?? '', maxDepth: 3);
     }
 }
