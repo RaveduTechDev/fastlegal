@@ -79,7 +79,11 @@ document.addEventListener(
             try {
                 const parsedUrl = new URL(value, window.location.origin);
 
-                if (["http:", "https:", "mailto:", "tel:"].includes(parsedUrl.protocol)) {
+                if (
+                    ["http:", "https:", "mailto:", "tel:"].includes(
+                        parsedUrl.protocol,
+                    )
+                ) {
                     return parsedUrl.href;
                 }
             } catch (error) {
@@ -129,7 +133,23 @@ document.addEventListener(
                 }
 
                 if (attributeName === "style") {
-                    if (["span", "p", "div", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote", "li", "td", "th"].includes(tagName)) {
+                    if (
+                        [
+                            "span",
+                            "p",
+                            "div",
+                            "h1",
+                            "h2",
+                            "h3",
+                            "h4",
+                            "h5",
+                            "h6",
+                            "blockquote",
+                            "li",
+                            "td",
+                            "th",
+                        ].includes(tagName)
+                    ) {
                         return;
                     }
 
@@ -166,7 +186,25 @@ document.addEventListener(
                     return;
                 }
 
-                if (!["alt", "title", "target", "rel", "width", "height", "loading", "allow", "allowfullscreen", "frameborder", "colspan", "rowspan", "scope", "data-as-button", "data-as-button-theme"].includes(attributeName)) {
+                if (
+                    ![
+                        "alt",
+                        "title",
+                        "target",
+                        "rel",
+                        "width",
+                        "height",
+                        "loading",
+                        "allow",
+                        "allowfullscreen",
+                        "frameborder",
+                        "colspan",
+                        "rowspan",
+                        "scope",
+                        "data-as-button",
+                        "data-as-button-theme",
+                    ].includes(attributeName)
+                ) {
                     element.removeAttribute(attribute.name);
                 }
             });
