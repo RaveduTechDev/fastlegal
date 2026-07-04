@@ -89,7 +89,12 @@ class Article extends Model implements HasMedia
 
     public function renderedDescription(): string
     {
-        return $this->description ?? '';
+        $text = $this->description ?? '';
+
+        $decodedText = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        $allowedTags = '<p><b><strong><i><em><a><ul><ol><li>';
+
+        return strip_tags($decodedText, $allowedTags);
     }
 
     public function renderedContent(): string
