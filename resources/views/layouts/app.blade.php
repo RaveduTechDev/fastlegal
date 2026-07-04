@@ -14,9 +14,8 @@
     <link rel="shortcut icon" href="{{ asset('assets/img/FL.png') }}" type="image/x-icon">
 
     <!-- Scripts -->
-    <link rel="stylesheet" href="{{ asset('build/assets/app-CIh0_COA.css') }}">
-    <script src="{{ asset('build/assets/app-Cn2M40rO.js') }}"></script>
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    @livewireScriptConfig
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
 
     <!-- Styles -->
@@ -45,8 +44,6 @@
     </div>
 
     @stack('modals')
-
-    @livewireScripts
 </body>
 
 </html>
