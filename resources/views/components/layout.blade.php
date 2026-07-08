@@ -39,7 +39,9 @@
 
     {{-- <link rel="stylesheet" href="{{ asset('lib/owlcarousel/css/owl.theme.default.min.css') }}"> --}}
     @livewireScriptConfig
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js']) --}}
+    <link rel="stylesheet" href="{{ asset('build/assets/app-C6yo_0wT.css') }}">
+    <script src="{{ asset('build/assets/app-BGFk6IQn.js') }}"></script>
 
 </head>
 
