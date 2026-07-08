@@ -77,9 +77,14 @@ class Article extends Model implements HasMedia
         });
     }
 
-    public function contentDescription()
+    public function contentDescription(int $limit = 145)
     {
-        return $this->description ?? '';
+        $text = $this->description ?? '';
+
+        $decodedText = html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        $cleanText = strip_tags($decodedText);
+
+        return Str::limit(Str::squish($cleanText), $limit);
     }
 
     public function metaDescription(int $limit = 160): string
